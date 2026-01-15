@@ -6,7 +6,7 @@ total 32
 drwxr-xr-x 3 rgirhepu rgirhepu  4096 Jan  7 17:07 RahulLinux
 drwxr-xr-x 3 rgirhepu rgirhepu  4096 Jan  7 17:24 newfolder
 drwxr-xr-x 6 rgirhepu rgirhepu  4096 Jan  8 10:52 full-stack_chatApp
-rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$dvjdvjdvkwekdvkevk
 rgirhepu@LAPTOP-EUJRM4DD:~$
 rgirhepu@LAPTOP-EUJRM4DD:~$ ls
 RahulLinux  ScriptDemo.sh  full-stack_chatApp  get_helm.sh  kind-config.yaml  newfolder
