@@ -1,0 +1,9 @@
+Attach to running EC2
+
+Detect disk in OS
+
+Create filesystem (if new)
+
+Mount volume
+
+(Optional) Persist via fstab
