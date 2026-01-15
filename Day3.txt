@@ -1,0 +1,319 @@
+rgirhepu@LAPTOP-EUJRM4DD:~$ ls -ltr
+total 32
+-rwxr--r-- 1 rgirhepu rgirhepu    32 Sep 30 04:53 ScriptDemo.sh
+-rwx------ 1 rgirhepu docker   11929 Nov 27 10:34 get_helm.sh
+-rw-r--r-- 1 rgirhepu docker     375 Nov 27 10:42 kind-config.yaml
+drwxr-xr-x 3 rgirhepu rgirhepu  4096 Jan  7 17:07 RahulLinux
+drwxr-xr-x 3 rgirhepu rgirhepu  4096 Jan  7 17:24 newfolder
+drwxr-xr-x 6 rgirhepu rgirhepu  4096 Jan  8 10:52 full-stack_chatApp
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$ ls
+RahulLinux  ScriptDemo.sh  full-stack_chatApp  get_helm.sh  kind-config.yaml  newfolder
+rgirhepu@LAPTOP-EUJRM4DD:~$ ls -ltr
+total 32
+-rwxr--r-- 1 rgirhepu rgirhepu    32 Sep 30 04:53 ScriptDemo.sh
+-rwx------ 1 rgirhepu docker   11929 Nov 27 10:34 get_helm.sh
+-rw-r--r-- 1 rgirhepu docker     375 Nov 27 10:42 kind-config.yaml
+drwxr-xr-x 3 rgirhepu rgirhepu  4096 Jan  7 17:07 RahulLinux
+drwxr-xr-x 3 rgirhepu rgirhepu  4096 Jan  7 17:24 newfolder
+drwxr-xr-x 6 rgirhepu rgirhepu  4096 Jan  8 10:52 full-stack_chatApp
+rgirhepu@LAPTOP-EUJRM4DD:~$ chmod 644 ScriptDemo.sh
+rgirhepu@LAPTOP-EUJRM4DD:~$ ls -ltr
+total 32
+-rw-r--r-- 1 rgirhepu rgirhepu    32 Sep 30 04:53 ScriptDemo.sh
+-rwx------ 1 rgirhepu docker   11929 Nov 27 10:34 get_helm.sh
+-rw-r--r-- 1 rgirhepu docker     375 Nov 27 10:42 kind-config.yaml
+drwxr-xr-x 3 rgirhepu rgirhepu  4096 Jan  7 17:07 RahulLinux
+drwxr-xr-x 3 rgirhepu rgirhepu  4096 Jan  7 17:24 newfolder
+drwxr-xr-x 6 rgirhepu rgirhepu  4096 Jan  8 10:52 full-stack_chatApp
+rgirhepu@LAPTOP-EUJRM4DD:~$ chmod 777 ScriptDemo.sh
+rgirhepu@LAPTOP-EUJRM4DD:~$ ls -ltr
+total 32
+-rwxrwxrwx 1 rgirhepu rgirhepu    32 Sep 30 04:53 ScriptDemo.sh
+-rwx------ 1 rgirhepu docker   11929 Nov 27 10:34 get_helm.sh
+-rw-r--r-- 1 rgirhepu docker     375 Nov 27 10:42 kind-config.yaml
+drwxr-xr-x 3 rgirhepu rgirhepu  4096 Jan  7 17:07 RahulLinux
+drwxr-xr-x 3 rgirhepu rgirhepu  4096 Jan  7 17:24 newfolder
+drwxr-xr-x 6 rgirhepu rgirhepu  4096 Jan  8 10:52 full-stack_chatApp
+rgirhepu@LAPTOP-EUJRM4DD:~$ chown nikhil ScriptDemo.sh
+chown: invalid user: ‘nikhil’
+rgirhepu@LAPTOP-EUJRM4DD:~$ chgrp rgirhepu get_helm.sh
+rgirhepu@LAPTOP-EUJRM4DD:~$ ls -ltr
+total 32
+-rwxrwxrwx 1 rgirhepu rgirhepu    32 Sep 30 04:53 ScriptDemo.sh
+-rwx------ 1 rgirhepu rgirhepu 11929 Nov 27 10:34 get_helm.sh
+-rw-r--r-- 1 rgirhepu docker     375 Nov 27 10:42 kind-config.yaml
+drwxr-xr-x 3 rgirhepu rgirhepu  4096 Jan  7 17:07 RahulLinux
+drwxr-xr-x 3 rgirhepu rgirhepu  4096 Jan  7 17:24 newfolder
+drwxr-xr-x 6 rgirhepu rgirhepu  4096 Jan  8 10:52 full-stack_chatApp
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$ ls -ltr
+total 32
+-rwxrwxrwx 1 rgirhepu rgirhepu    32 Sep 30 04:53 ScriptDemo.sh
+-rwx------ 1 rgirhepu rgirhepu 11929 Nov 27 10:34 get_helm.sh
+-rw-r--r-- 1 rgirhepu docker     375 Nov 27 10:42 kind-config.yaml
+drwxr-xr-x 3 rgirhepu rgirhepu  4096 Jan  7 17:07 RahulLinux
+drwxr-xr-x 3 rgirhepu rgirhepu  4096 Jan  7 17:24 newfolder
+drwxr-xr-x 6 rgirhepu rgirhepu  4096 Jan  8 10:52 full-stack_chatApp
+rgirhepu@LAPTOP-EUJRM4DD:~$ chgrp docker get_helm.sh
+rgirhepu@LAPTOP-EUJRM4DD:~$ ls -ltr
+total 32
+-rwxrwxrwx 1 rgirhepu rgirhepu    32 Sep 30 04:53 ScriptDemo.sh
+-rwx------ 1 rgirhepu docker   11929 Nov 27 10:34 get_helm.sh
+-rw-r--r-- 1 rgirhepu docker     375 Nov 27 10:42 kind-config.yaml
+drwxr-xr-x 3 rgirhepu rgirhepu  4096 Jan  7 17:07 RahulLinux
+drwxr-xr-x 3 rgirhepu rgirhepu  4096 Jan  7 17:24 newfolder
+drwxr-xr-x 6 rgirhepu rgirhepu  4096 Jan  8 10:52 full-stack_chatApp
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$ touch log.txt
+rgirhepu@LAPTOP-EUJRM4DD:~$ vi log.txt
+rgirhepu@LAPTOP-EUJRM4DD:~$ vi log.txt
+rgirhepu@LAPTOP-EUJRM4DD:~$ vi log.txt
+rgirhepu@LAPTOP-EUJRM4DD:~$ cat log.txt
+Log management is the process of collecting, storing, analyzing, and rotating logs. It helps administrators keep track of system events efficiently while ensuring that old logs are safely archived or removed.
+
+In simple terms, logs help you:
+
+Monitor system performance: Detect issues early.
+Ensure security: Track login attempts or suspicious activity.
+Maintain compliance: Meet audit requirements.
+Troubleshoot errors: Trace system or application failures.
+Log Management Tools in Linux
+Linux provides several built-in tools to manage logs effectively:
+
+syslog: The standard for logging system messages.
+rsyslog: An enhanced version of syslog with better performance and filtering.
+journald: Part of systemd, responsible for structured log storage and retrieval.
+logrotate: A tool for managing log file rotation, compression, and archiving.
+Common Log Files in Linux
+Logs are usually stored under the /var/log/ directory.
+
+/var/log/syslog: General system messages and events.
+/var/log/auth.log: Authentication and login-related events.
+/var/log/kern.log: Kernel-related messages.
+/var/log/boot.log: Boot-time messages.
+/var/log/dmesg: Hardware and kernel ring buffer messages.
+Managing Logs in Linux
+The Log Files in Linux stores critical information of the device. If you can Manage Linux Log Files, some confidential background information will come in your hand. Log Managing in Linux can be classified as an expert-level activity on Linux. There are few Linux Commands present to Manage Logs in Linux efficiently.
+
+Methods to Manage Logs in Linux
+To Manage Linux Logs, the following commands can be used one by one as necessary.
+Method 1: Using cat Command - View Log Content
+Display the full contents of a log file.
+Command:
+
+cat /var/log/syslog
+Example:
+
+cat /var/log/auth.log
+rgirhepu@LAPTOP-EUJRM4DD:~$ vi log.txt
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$ cat log.txt
+Log management is the process of collecting, storing, analyzing, and rotating logs. It helps administrators keep track of system events efficiently while ensuring that old logs are safely archived or removed.
+
+In simple terms, logs help you:
+
+Monitor system performance: Detect issues early.
+Ensure security: Track login attempts or suspicious activity.
+Maintain compliance: Meet audit requirements.
+Troubleshoot errors: Trace system or application failures.
+Log Management Tools in Linux
+Linux provides several built-in tools to manage logs effectively:
+
+syslog: The standard for logging system messages.
+rsyslog: An enhanced version of syslog with better performance and filtering.
+journald: Part of systemd, responsible for structured log storage and retrieval.
+logrotate: A tool for managing log file rotation, compression, and archiving.
+Common Log Files in Linux
+Logs are usually stored under the /var/log/ directory.
+
+/var/log/syslog: General system messages and events.
+/var/log/auth.log: Authentication and login-related events.
+/var/log/kern.log: Kernel-related messages.
+/var/log/boot.log: Boot-time messages.
+/var/log/dmesg: Hardware and kernel ring buffer messages.
+Managing Logs in Linux
+The Log Files in Linux stores critical information of the device. If you can Manage Linux Log Files, some confidential background information will come in your hand. Log Managing in Linux can be classified as an expert-level activity on Linux. There are few Linux Commands present to Manage Logs in Linux efficiently.
+
+Methods to Manage Logs in Linux
+To Manage Linux Logs, the following commands can be used one by one as necessary.
+Method 1: Using cat Command - View Log Content
+Display the full contents of a log file.
+Command:
+
+cat /var/log/syslog
+Example:
+
+cat /var/log/auth.log
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$ head log.txt
+Log management is the process of collecting, storing, analyzing, and rotating logs. It helps administrators keep track of system events efficiently while ensuring that old logs are safely archived or removed.
+
+In simple terms, logs help you:
+
+Monitor system performance: Detect issues early.
+Ensure security: Track login attempts or suspicious activity.
+Maintain compliance: Meet audit requirements.
+Troubleshoot errors: Trace system or application failures.
+Log Management Tools in Linux
+Linux provides several built-in tools to manage logs effectively:
+rgirhepu@LAPTOP-EUJRM4DD:~$ tail log.txt
+Methods to Manage Logs in Linux
+To Manage Linux Logs, the following commands can be used one by one as necessary.
+Method 1: Using cat Command - View Log Content
+Display the full contents of a log file.
+Command:
+
+cat /var/log/syslog
+Example:
+
+cat /var/log/auth.log
+rgirhepu@LAPTOP-EUJRM4DD:~$ head -n 15 log.txt
+Log management is the process of collecting, storing, analyzing, and rotating logs. It helps administrators keep track of system events efficiently while ensuring that old logs are safely archived or removed.
+
+In simple terms, logs help you:
+
+Monitor system performance: Detect issues early.
+Ensure security: Track login attempts or suspicious activity.
+Maintain compliance: Meet audit requirements.
+Troubleshoot errors: Trace system or application failures.
+Log Management Tools in Linux
+Linux provides several built-in tools to manage logs effectively:
+
+syslog: The standard for logging system messages.
+rsyslog: An enhanced version of syslog with better performance and filtering.
+journald: Part of systemd, responsible for structured log storage and retrieval.
+logrotate: A tool for managing log file rotation, compression, and archiving.
+rgirhepu@LAPTOP-EUJRM4DD:~$ tail -n 15 log.txt
+/var/log/boot.log: Boot-time messages.
+/var/log/dmesg: Hardware and kernel ring buffer messages.
+Managing Logs in Linux
+The Log Files in Linux stores critical information of the device. If you can Manage Linux Log Files, some confidential background information will come in your hand. Log Managing in Linux can be classified as an expert-level activity on Linux. There are few Linux Commands present to Manage Logs in Linux efficiently.
+
+Methods to Manage Logs in Linux
+To Manage Linux Logs, the following commands can be used one by one as necessary.
+Method 1: Using cat Command - View Log Content
+Display the full contents of a log file.
+Command:
+
+cat /var/log/syslog
+Example:
+
+cat /var/log/auth.log
+rgirhepu@LAPTOP-EUJRM4DD:~$ cat log.txt
+Log management is the process of collecting, storing, analyzing, and rotating logs. It helps administrators keep track of system events efficiently while ensuring that old logs are safely archived or removed.
+
+In simple terms, logs help you:
+
+Monitor system performance: Detect issues early.
+Ensure security: Track login attempts or suspicious activity.
+Maintain compliance: Meet audit requirements.
+Troubleshoot errors: Trace system or application failures.
+Log Management Tools in Linux
+Linux provides several built-in tools to manage logs effectively:
+
+syslog: The standard for logging system messages.
+rsyslog: An enhanced version of syslog with better performance and filtering.
+journald: Part of systemd, responsible for structured log storage and retrieval.
+logrotate: A tool for managing log file rotation, compression, and archiving.
+Common Log Files in Linux
+Logs are usually stored under the /var/log/ directory.
+
+/var/log/syslog: General system messages and events.
+/var/log/auth.log: Authentication and login-related events.
+/var/log/kern.log: Kernel-related messages.
+/var/log/boot.log: Boot-time messages.
+/var/log/dmesg: Hardware and kernel ring buffer messages.
+Managing Logs in Linux
+The Log Files in Linux stores critical information of the device. If you can Manage Linux Log Files, some confidential background information will come in your hand. Log Managing in Linux can be classified as an expert-level activity on Linux. There are few Linux Commands present to Manage Logs in Linux efficiently.
+
+Methods to Manage Logs in Linux
+To Manage Linux Logs, the following commands can be used one by one as necessary.
+Method 1: Using cat Command - View Log Content
+Display the full contents of a log file.
+Command:
+
+cat /var/log/syslog
+Example:
+
+cat /var/log/auth.log
+rgirhepu@LAPTOP-EUJRM4DD:~$ touch fil1.txt file2.txt file3.txt
+rgirhepu@LAPTOP-EUJRM4DD:~$ ls
+RahulLinux  ScriptDemo.sh  fil1.txt  file2.txt  file3.txt  full-stack_chatApp  get_helm.sh  kind-config.yaml  log.txt  newfolder
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$ head -n 15 log.txt
+Log management is the process of collecting, storing, analyzing, and rotating logs. It helps administrators keep track of system events efficiently while ensuring that old logs are safely archived or removed.
+
+In simple terms, logs help you:
+
+Monitor system performance: Detect issues early.
+Ensure security: Track login attempts or suspicious activity.
+Maintain compliance: Meet audit requirements.
+Troubleshoot errors: Trace system or application failures.
+Log Management Tools in Linux
+Linux provides several built-in tools to manage logs effectively:
+
+syslog: The standard for logging system messages.
+rsyslog: An enhanced version of syslog with better performance and filtering.
+journald: Part of systemd, responsible for structured log storage and retrieval.
+logrotate: A tool for managing log file rotation, compression, and archiving.
+rgirhepu@LAPTOP-EUJRM4DD:~$ head -n 15 log.txt > file1.txt
+rgirhepu@LAPTOP-EUJRM4DD:~$ cat file1.txt
+Log management is the process of collecting, storing, analyzing, and rotating logs. It helps administrators keep track of system events efficiently while ensuring that old logs are safely archived or removed.
+
+In simple terms, logs help you:
+
+Monitor system performance: Detect issues early.
+Ensure security: Track login attempts or suspicious activity.
+Maintain compliance: Meet audit requirements.
+Troubleshoot errors: Trace system or application failures.
+Log Management Tools in Linux
+Linux provides several built-in tools to manage logs effectively:
+
+syslog: The standard for logging system messages.
+rsyslog: An enhanced version of syslog with better performance and filtering.
+journald: Part of systemd, responsible for structured log storage and retrieval.
+logrotate: A tool for managing log file rotation, compression, and archiving.
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$ head -n 15 log.txt > file1.txt
+rgirhepu@LAPTOP-EUJRM4DD:~$ diff file1.txt file2.txt
+1,15d0
+< Log management is the process of collecting, storing, analyzing, and rotating logs. It helps administrators keep track of system events efficiently while ensuring that old logs are safely archived or removed.
+<
+< In simple terms, logs help you:
+<
+< Monitor system performance: Detect issues early.
+< Ensure security: Track login attempts or suspicious activity.
+< Maintain compliance: Meet audit requirements.
+< Troubleshoot errors: Trace system or application failures.
+< Log Management Tools in Linux
+< Linux provides several built-in tools to manage logs effectively:
+<
+< syslog: The standard for logging system messages.
+< rsyslog: An enhanced version of syslog with better performance and filtering.
+< journald: Part of systemd, responsible for structured log storage and retrieval.
+< logrotate: A tool for managing log file rotation, compression, and archiving.
+rgirhepu@LAPTOP-EUJRM4DD:~$ cat file2.txt
+rgirhepu@LAPTOP-EUJRM4DD:~$ vi file2.txt
+rgirhepu@LAPTOP-EUJRM4DD:~$ ds -h
+ds: command not found
+rgirhepu@LAPTOP-EUJRM4DD:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+none            1.9G     0  1.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers         378G  288G   90G  77% /usr/lib/wsl/drivers
+/dev/sdd       1007G   13G  943G   2% /
+none            1.9G   92K  1.9G   1% /mnt/wslg
+none            1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs          1.9G  2.7M  1.9G   1% /init
+none            1.9G  796K  1.9G   1% /run
+none            1.9G     0  1.9G   0% /run/lock
+none            1.9G     0  1.9G   0% /run/shm
+none            1.9G   76K  1.9G   1% /mnt/wslg/versions.txt
+none            1.9G   76K  1.9G   1% /mnt/wslg/doc
+C:\             378G  288G   90G  77% /mnt/c
+D:\              98G   73G   25G  75% /mnt/d
+tmpfs           377M   20K  377M   1% /run/user/1000
+rgirhepu@LAPTOP-EUJRM4DD:~$
