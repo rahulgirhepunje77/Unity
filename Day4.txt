@@ -1,0 +1,1268 @@
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.6.87.2-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat Jan 10 04:34:02 UTC 2026
+
+  System load:  1.98                Processes:             57
+  Usage of /:   1.3% of 1006.85GB   Users logged in:       0
+  Memory usage: 10%                 IPv4 address for eth0: 172.20.78.70
+  Swap usage:   0%
+
+
+This message is shown once a day. To disable it please create the
+/home/rgirhepu/.hushlogin file.
+rgirhepu@LAPTOP-EUJRM4DD:~$ ls
+RahulLinux  ScriptDemo.sh  fil1.txt  file1.txt  file2.txt  file3.txt  full-stack_chatApp  get_helm.sh  kind-config.yaml  log.txt  newfolder
+rgirhepu@LAPTOP-EUJRM4DD:~$ df -h RahulLinux
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G   13G  943G   2% /
+rgirhepu@LAPTOP-EUJRM4DD:~$ df -h  full-stack_chatApp
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G   13G  943G   2% /
+rgirhepu@LAPTOP-EUJRM4DD:~$ top
+top - 04:48:27 up 14 min,  1 user,  load average: 0.15, 0.43, 0.55
+Tasks: 101 total,   1 running, 100 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.3 us,  1.2 sy,  0.0 ni, 96.9 id,  0.1 wa,  0.0 hi,  0.5 si,  0.0 st
+MiB Mem :   3762.2 total,    352.0 free,   1437.9 used,   2090.0 buff/cache
+MiB Swap:   1024.0 total,   1024.0 free,      0.0 used.   2324.3 avail Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   2249 root      20   0 1594580 352292  78720 S   6.3   9.1   2:08.24 kube-apiserver
+   2261 root      20   0   11.2g  87884  37376 S   4.3   2.3   1:03.73 etcd
+   1967 root      20   0 2417712  95216  60160 S   4.0   2.5   0:55.42 kubelet
+   2235 root      20   0 1318676 117408  67968 S   3.3   3.0   0:50.42 kube-controller
+   1887 root      20   0 2712640  96300  60928 S   2.0   2.5   0:35.27 kubelet
+   1607 root      20   0 3122196  65400  34792 S   1.3   1.7   0:21.07 containerd
+   1886 root      20   0 2933580  96872  61312 S   1.3   2.5   0:34.77 kubelet
+   2243 root      20   0 1297284  69632  48640 S   1.0   1.8   0:27.72 kube-scheduler
+   1612 root      20   0 3185940  64740  34304 S   0.7   1.7   0:18.20 containerd
+   3978 dnsmasq   20   0   59532  20480  16640 S   0.7   0.5   0:07.56 redis-server
+   4749 dnsmasq   20   0 1383000  95144  72832 S   0.7   2.5   0:02.31 argocd-repo-ser
+   1793 root      20   0 3122708  60384  33792 S   0.3   1.6   0:12.75 containerd
+   3296 root      20   0 1233804  11540   7296 S   0.3   0.3   0:00.85 containerd-shim
+   3760 dnsmasq   20   0 1383256 101288  79872 S   0.3   2.6   0:03.94 argocd-applicat
+   3903 65532     20   0 1294104  60992  47104 S   0.3   1.6   0:07.07 coredns
+   3958 65532     20   0 1294616  59904  46080 S   0.3   1.6   0:06.13 coredns
+      1 root      20   0   21804  12660   9460 S   0.0   0.3   0:03.44 systemd
+      2 root      20   0    3120   2048   2048 S   0.0   0.1   0:00.21 init-systemd(Ub
+      7 root      20   0    3136   1800   1792 S   0.0   0.0   0:00.00 init
+     80 root      19  -1   50352  15872  14976 S   0.0   0.4   0:02.59 systemd-journal
+    131 root      20   0   25004   6016   4992 S   0.0   0.2   0:00.94 systemd-udevd
+    139 systemd+  20   0   21584  12672  10496 S   0.0   0.3   0:00.38 systemd-resolve
+    140 systemd+  20   0   91020   7680   6784 S   0.0   0.2   0:00.33 systemd-timesyn
+    202 root      20   0    4236   2560   2432 S   0.0   0.1   0:00.10 cron
+    203 message+  20   0    9636   5120   4608 S   0.0   0.1   0:00.31 dbus-daemon
+    250 root      20   0   17956   8192   7424 S   0.0   0.2   0:00.85 systemd-logind
+    257 root      20   0 1756096  12672  10752 S   0.0   0.3   0:00.73 wsl-pro-service
+    282 syslog    20   0  222508   5376   4224 S   0.0   0.1   0:00.44 rsyslogd
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$ ps -ef
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 04:33 ?        00:00:03 /sbin/init
+root           2       1  0 04:33 ?        00:00:00 /init
+root           7       2  0 04:33 ?        00:00:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          80       1  0 04:33 ?        00:00:02 /usr/lib/systemd/systemd-journald
+root         131       1  0 04:33 ?        00:00:00 /usr/lib/systemd/systemd-udevd
+systemd+     139       1  0 04:33 ?        00:00:00 /usr/lib/systemd/systemd-resolved
+systemd+     140       1  0 04:33 ?        00:00:00 /usr/lib/systemd/systemd-timesyncd
+root         202       1  0 04:33 ?        00:00:00 /usr/sbin/cron -f -P
+message+     203       1  0 04:33 ?        00:00:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-onl
+root         250       1  0 04:33 ?        00:00:00 /usr/lib/systemd/systemd-logind
+root         257       1  0 04:33 ?        00:00:00 /usr/libexec/wsl-pro-service -vv
+syslog       282       1  0 04:33 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root         295       1  0 04:33 hvc0     00:00:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200,38400,9600 vt220
+root         306       1  0 04:33 ?        00:00:06 /usr/bin/containerd
+root         314       1  0 04:33 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear - linux
+root         376       1  2 04:33 ?        00:00:20 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root         382       1  0 04:33 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         593       2  0 04:34 ?        00:00:00 /init
+root         594     593  0 04:34 ?        00:00:00 /init
+rgirhepu     597     594  0 04:34 pts/0    00:00:00 -bash
+root         599       2  0 04:34 pts/1    00:00:00 /bin/login -f
+rgirhepu     916       1  0 04:34 ?        00:00:00 /usr/lib/systemd/systemd --user
+rgirhepu     917     916  0 04:34 ?        00:00:00 (sd-pam)
+root         984       1  0 04:34 ?        00:00:01 /usr/bin/containerd-shim-runc-v2 -namespace moby -id cb76ee430f700e375a49cf31fe6e5ff95b18cbf1ea
+root         993       1  0 04:34 ?        00:00:01 /usr/bin/containerd-shim-runc-v2 -namespace moby -id 82988b5c0edd7a3e309c5a742d5b23537f7a65c1a8
+root         994       1  0 04:34 ?        00:00:01 /usr/bin/containerd-shim-runc-v2 -namespace moby -id c289fea924ef6c67eeda01d89806ef7e9dcf4ddde9
+rgirhepu    1058     599  0 04:34 pts/1    00:00:00 -bash
+root        1068     984  0 04:34 ?        00:00:01 /sbin/init
+root        1075     993  0 04:34 ?        00:00:02 /sbin/init
+root        1078     994  0 04:34 ?        00:00:02 /sbin/init
+root        1231     376  0 04:34 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip 172.20.78.70 -host-port 33893 -container-ip 172.18.0.
+root        1573    1075  0 04:34 ?        00:00:00 /lib/systemd/systemd-journald
+root        1581    1078  0 04:34 ?        00:00:00 /lib/systemd/systemd-journald
+root        1607    1075  2 04:34 ?        00:00:21 /usr/local/bin/containerd
+root        1612    1078  2 04:34 ?        00:00:18 /usr/local/bin/containerd
+root        1776    1068  0 04:34 ?        00:00:02 /lib/systemd/systemd-journald
+root        1793    1068  1 04:34 ?        00:00:12 /usr/local/bin/containerd
+root        1886    1075  4 04:34 ?        00:00:35 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/et
+root        1887    1078  4 04:34 ?        00:00:35 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/et
+root        1967    1068  6 04:34 ?        00:00:56 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/et
+root        2021    1068  0 04:34 ?        00:00:00 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 4f7c4f3042a427624f06f120bb715df8de
+root        2022    1068  0 04:34 ?        00:00:00 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 65357fb7fbac1b19f54da2220e12df64f5
+root        2076    1068  0 04:34 ?        00:00:00 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 91c11c1fe7fc32ec40e97b5526e865a863
+root        2093    1068  0 04:34 ?        00:00:00 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id a9c07d0fdde82e2188e64c5b6dc3d373cd
+65535       2106    2022  0 04:34 ?        00:00:00 /pause
+65535       2136    2021  0 04:34 ?        00:00:00 /pause
+65535       2143    2076  0 04:34 ?        00:00:00 /pause
+65535       2150    2093  0 04:34 ?        00:00:00 /pause
+root        2235    2076  5 04:34 ?        00:00:51 kube-controller-manager --allocate-node-cidrs=true --authentication-kubeconfig=/etc/kubernetes/
+root        2243    2093  3 04:34 ?        00:00:27 kube-scheduler --authentication-kubeconfig=/etc/kubernetes/scheduler.conf --authorization-kubec
+root        2249    2022 14 04:34 ?        00:02:09 kube-apiserver --advertise-address=172.18.0.2 --allow-privileged=true --authorization-mode=Node
+root        2261    2021  7 04:34 ?        00:01:04 etcd --advertise-client-urls=https://172.18.0.2:2379 --cert-file=/etc/kubernetes/pki/etcd/serve
+root        2553    1075  0 04:34 ?        00:00:00 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 4383cc58fe1b00adf7d08bc20640eeae9e
+root        2621    1075  0 04:34 ?        00:00:01 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id d60467d1d36ed36f41f6e3a8a17153cb2a
+root        2696    1078  0 04:34 ?        00:00:01 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 888442358f65038e6ab7c251c0b193e017
+root        2713    1078  0 04:34 ?        00:00:01 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 9361a5eeabee28b06b5a16099540fb3a37
+65535       2774    2621  0 04:34 ?        00:00:00 /pause
+65535       2813    2696  0 04:34 ?        00:00:00 /pause
+65535       2816    2553  0 04:34 ?        00:00:00 /pause
+65535       2941    2713  0 04:34 ?        00:00:00 /pause
+root        3013    1078  0 04:34 ?        00:00:01 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id d0e76215cee6ac17ba3fc0497d698226b7
+65535       3091    3013  0 04:34 ?        00:00:00 /pause
+root        3171    2553  0 04:34 ?        00:00:03 /usr/local/bin/kube-proxy --config=/var/lib/kube-proxy/config.conf --hostname-override=argocd-c
+root        3192    2713  0 04:34 ?        00:00:04 /usr/local/bin/kube-proxy --config=/var/lib/kube-proxy/config.conf --hostname-override=argocd-c
+root        3248    1078  0 04:34 ?        00:00:00 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id c6011aaab10b45f259814ad790c090881d
+root        3249    1075  0 04:34 ?        00:00:00 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 5d4ee21a0fbf7ae4f1ce4277d5b356901d
+root        3250    1075  0 04:34 ?        00:00:01 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 2a4090026b59efa3e134fa41d3b46872a7
+root        3286    1075  0 04:34 ?        00:00:00 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id b36b1de3467d8396bfa75e3bfd6f9fdca8
+root        3290    1078  0 04:34 ?        00:00:00 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 5879eb00748ea0a4a597b9c98ed3ea2bfc
+root        3296    1078  0 04:34 ?        00:00:00 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 850e907d0e3ebc869df366a178f4740023
+root        3336    1075  0 04:34 ?        00:00:00 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 1431bb50c87553665a11043fc28253e01e
+root        3349    1078  0 04:34 ?        00:00:01 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id c08b1b4ecfd60d16c85571ed42b5e54cfc
+root        3457    1075  0 04:34 ?        00:00:01 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 2f66a08b7054dd4e2644c5417072626eb2
+65535       3464    3250  0 04:34 ?        00:00:00 /pause
+65535       3501    3290  0 04:34 ?        00:00:00 /pause
+65535       3518    3249  0 04:34 ?        00:00:00 /pause
+65535       3552    3248  0 04:34 ?        00:00:00 /pause
+65535       3570    3349  0 04:34 ?        00:00:00 /pause
+65535       3571    3286  0 04:34 ?        00:00:00 /pause
+dnsmasq     3581    3336  0 04:34 ?        00:00:00 /pause
+dnsmasq     3587    3013  0 04:34 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-applicationset-controller --metrics-addr=:8080 --probe-a
+65535       3592    3296  0 04:34 ?        00:00:00 /pause
+65535       3635    3457  0 04:34 ?        00:00:00 /pause
+root        3647    2696  0 04:34 ?        00:00:03 /bin/kindnetd
+root        3658    2621  0 04:34 ?        00:00:02 /bin/kindnetd
+dnsmasq     3739    3290  0 04:34 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-application-controller --metrics-port=8082
+dnsmasq     3760    3587  0 04:34 ?        00:00:03 /usr/local/bin/argocd-applicationset-controller --metrics-addr=:8080 --probe-addr=:8081 --webho
+dnsmasq     3836    3349  0 04:34 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-notifications --metrics-port=9001 --namespace=argocd --a
+dnsmasq     3840    3739  0 04:34 ?        00:00:05 /usr/local/bin/argocd-application-controller --metrics-port=8082
+65532       3903    3248  0 04:34 ?        00:00:07 /coredns -conf /etc/coredns/Corefile
+65532       3958    3457  0 04:34 ?        00:00:06 /coredns -conf /etc/coredns/Corefile
+dnsmasq     3978    3336  0 04:34 ?        00:00:07 redis-server *:6379
+dnsmasq     4043    3836  0 04:34 ?        00:00:02 /usr/local/bin/argocd-notifications --metrics-port=9001 --namespace=argocd --argocd-repo-server
+1001        4270    3249  0 04:34 ?        00:00:04 /shared/argocd-dex rundex
+dnsmasq     4669    3286  0 04:35 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-server --port=8080 --metrics-port=8083
+dnsmasq     4686    4669  0 04:35 ?        00:00:05 /usr/local/bin/argocd-server --port=8080 --metrics-port=8083
+dnsmasq     4731    3296  0 04:35 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-repo-server --port=8081 --metrics-port=8084
+dnsmasq     4749    4731  0 04:35 ?        00:00:02 /usr/local/bin/argocd-repo-server --port=8081 --metrics-port=8084
+dnsmasq     4763    4731  0 04:35 ?        00:00:00 gpg-agent --homedir /app/config/gpg/keys --use-standard-socket --daemon
+root        4964    3250  0 04:35 ?        00:00:00 local-path-provisioner --debug start --helper-image docker.io/kindest/local-path-helper:v202412
+root        5343     131  0 04:48 ?        00:00:00 (udev-worker)
+root        5344     131  0 04:48 ?        00:00:00 (udev-worker)
+rgirhepu    5345     597 99 04:48 pts/0    00:00:00 ps -ef
+rgirhepu@LAPTOP-EUJRM4DD:~$ kill -9 5345
+-bash: kill: (5345) - No such process
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$ sudo ps -h RahulLinux
+[sudo] password for rgirhepu:
+error: unsupported SysV option
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+rgirhepu@LAPTOP-EUJRM4DD:~$ sudo -u
+sudo: option requires an argument -- 'u'
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-ABkNnS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-ABkNnS] [-g group] [-h host] [-p prompt] [-U user]
+            [-u user] [command [arg ...]]
+usage: sudo [-ABbEHkNnPS] [-r role] [-t type] [-C num] [-D directory]
+            [-g group] [-h host] [-p prompt] [-R directory] [-T timeout]
+            [-u user] [VAR=value] [-i | -s] [command [arg ...]]
+usage: sudo -e [-ABkNnS] [-r role] [-t type] [-C num] [-D directory]
+            [-g group] [-h host] [-p prompt] [-R directory] [-T timeout]
+            [-u user] file ...
+rgirhepu@LAPTOP-EUJRM4DD:~$ sudo su-
+sudo: su-: command not found
+rgirhepu@LAPTOP-EUJRM4DD:~$ sudo su
+root@LAPTOP-EUJRM4DD:/home/rgirhepu# exit
+exit
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$ ifconfig
+Command 'ifconfig' not found, but can be installed with:
+sudo apt install net-tools
+rgirhepu@LAPTOP-EUJRM4DD:~$ apt update
+Reading package lists... Done
+E: Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)
+E: Unable to lock directory /var/lib/apt/lists/
+W: Problem unlinking the file /var/cache/apt/pkgcache.bin - RemoveCaches (13: Permission denied)
+W: Problem unlinking the file /var/cache/apt/srcpkgcache.bin - RemoveCaches (13: Permission denied)
+rgirhepu@LAPTOP-EUJRM4DD:~$ sudo apt update
+Get:1 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Hit:2 http://archive.ubuntu.com/ubuntu noble InRelease
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:4 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1399 kB]
+Get:5 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [227 kB]
+Get:6 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21.5 kB]
+Get:7 http://security.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [9716 B]
+Get:8 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [920 kB]
+Get:9 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [208 kB]
+Get:10 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [71.4 kB]
+Get:11 http://security.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [19.6 kB]
+Get:12 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [2290 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:14 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [525 kB]
+Get:15 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Get:16 http://security.ubuntu.com/ubuntu noble-security/multiverse Translation-en [6188 B]
+Get:17 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [208 B]
+Get:18 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1690 kB]
+Get:19 http://archive.ubuntu.com/ubuntu noble-updates/main Translation-en [312 kB]
+Get:20 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [175 kB]
+Get:21 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 c-n-f Metadata [15.8 kB]
+Get:22 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1510 kB]
+Get:23 http://archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [307 kB]
+Get:24 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [378 kB]
+Get:25 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [31.5 kB]
+Get:26 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [2418 kB]
+Get:27 http://archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [551 kB]
+Get:28 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Get:29 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:30 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [7308 B]
+Get:31 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [10.5 kB]
+Get:32 http://archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Get:33 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Fetched 13.5 MB in 11s (1262 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+103 packages can be upgraded. Run 'apt list --upgradable' to see them.
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$ ifconfig
+Command 'ifconfig' not found, but can be installed with:
+sudo apt install net-tools
+rgirhepu@LAPTOP-EUJRM4DD:~$ sudo apt install net-tools
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  net-tools
+0 upgraded, 1 newly installed, 0 to remove and 103 not upgraded.
+Need to get 204 kB of archives.
+After this operation, 811 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 net-tools amd64 2.10-0.1ubuntu4.4 [204 kB]
+Fetched 204 kB in 1s (137 kB/s)
+Selecting previously unselected package net-tools.
+(Reading database ... 41472 files and directories currently installed.)
+Preparing to unpack .../net-tools_2.10-0.1ubuntu4.4_amd64.deb ...
+Unpacking net-tools (2.10-0.1ubuntu4.4) ...
+Setting up net-tools (2.10-0.1ubuntu4.4) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+rgirhepu@LAPTOP-EUJRM4DD:~$ ifconfig
+br-00b89c9e849b: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.18.0.1  netmask 255.255.0.0  broadcast 172.18.255.255
+        inet6 fe80::24d3:88ff:fee2:fee9  prefixlen 64  scopeid 0x20<link>
+        inet6 fc00:f853:ccd:e793::1  prefixlen 64  scopeid 0x0<global>
+        ether 26:d3:88:e2:fe:e9  txqueuelen 0  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+br-19f6f63ce9f3: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.49.1  netmask 255.255.255.0  broadcast 192.168.49.255
+        ether 7e:88:9c:82:ef:a0  txqueuelen 0  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+docker0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 172.17.0.1  netmask 255.255.0.0  broadcast 172.17.255.255
+        ether da:4c:33:e1:52:39  txqueuelen 0  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.20.78.70  netmask 255.255.240.0  broadcast 172.20.79.255
+        inet6 fe80::215:5dff:fe5f:4f49  prefixlen 64  scopeid 0x20<link>
+        ether 00:15:5d:5f:4f:49  txqueuelen 1000  (Ethernet)
+        RX packets 11526  bytes 14529624 (14.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3485  bytes 248137 (248.1 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 1438  bytes 80408 (80.4 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1438  bytes 80408 (80.4 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+veth07859c6: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet6 fe80::5454:43ff:fe68:833  prefixlen 64  scopeid 0x20<link>
+        ether 56:54:43:68:08:33  txqueuelen 0  (Ethernet)
+        RX packets 26999  bytes 1946158 (1.9 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 26892  bytes 5930183 (5.9 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vethab42695: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet6 fe80::90da:3eff:feda:57a1  prefixlen 64  scopeid 0x20<link>
+        ether 92:da:3e:da:57:a1  txqueuelen 0  (Ethernet)
+        RX packets 5547  bytes 755780 (755.7 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 5074  bytes 4576495 (4.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vethb3ad3a2: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet6 fe80::1002:aeff:fef4:83b2  prefixlen 64  scopeid 0x20<link>
+        ether 12:02:ae:f4:83:b2  txqueuelen 0  (Ethernet)
+        RX packets 30909  bytes 10346740 (10.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 31382  bytes 2536182 (2.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+rgirhepu@LAPTOP-EUJRM4DD:~$ ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet 10.255.255.254/32 brd 10.255.255.254 scope global lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:15:5d:5f:4f:49 brd ff:ff:ff:ff:ff:ff
+    inet 172.20.78.70/20 brd 172.20.79.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::215:5dff:fe5f:4f49/64 scope link
+       valid_lft forever preferred_lft forever
+3: br-00b89c9e849b: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default
+    link/ether 26:d3:88:e2:fe:e9 brd ff:ff:ff:ff:ff:ff
+    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-00b89c9e849b
+       valid_lft forever preferred_lft forever
+    inet6 fc00:f853:ccd:e793::1/64 scope global nodad
+       valid_lft forever preferred_lft forever
+    inet6 fe80::24d3:88ff:fee2:fee9/64 scope link
+       valid_lft forever preferred_lft forever
+4: br-19f6f63ce9f3: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default
+    link/ether 7e:88:9c:82:ef:a0 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.49.1/24 brd 192.168.49.255 scope global br-19f6f63ce9f3
+       valid_lft forever preferred_lft forever
+5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default
+    link/ether da:4c:33:e1:52:39 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+6: vethb3ad3a2@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-00b89c9e849b state UP group default
+    link/ether 12:02:ae:f4:83:b2 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet6 fe80::1002:aeff:fef4:83b2/64 scope link
+       valid_lft forever preferred_lft forever
+7: vethab42695@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-00b89c9e849b state UP group default
+    link/ether 92:da:3e:da:57:a1 brd ff:ff:ff:ff:ff:ff link-netnsid 1
+    inet6 fe80::90da:3eff:feda:57a1/64 scope link
+       valid_lft forever preferred_lft forever
+8: veth07859c6@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-00b89c9e849b state UP group default
+    link/ether 56:54:43:68:08:33 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+    inet6 fe80::5454:43ff:fe68:833/64 scope link
+       valid_lft forever preferred_lft forever
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$ nslookup
+>
+rgirhepu@LAPTOP-EUJRM4DD:~$ nslookup www.google.com
+Server:         10.255.255.254
+Address:        10.255.255.254#53
+
+Non-authoritative answer:
+Name:   www.google.com
+Address: 142.250.70.68
+Name:   www.google.com
+Address: 2404:6800:4009:803::2004
+
+rgirhepu@LAPTOP-EUJRM4DD:~$ nslookup ril.com
+Server:         10.255.255.254
+Address:        10.255.255.254#53
+
+Non-authoritative answer:
+Name:   ril.com
+Address: 49.40.54.28
+
+rgirhepu@LAPTOP-EUJRM4DD:~$ systemctl status docker
+● docker.service - Docker Application Container Engine
+     Loaded: loaded (/usr/lib/systemd/system/docker.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2026-01-10 04:34:07 UTC; 44min ago
+TriggeredBy: ● docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 376 (dockerd)
+      Tasks: 24
+     Memory: 105.9M (peak: 113.2M)
+        CPU: 29.628s
+     CGroup: /system.slice/docker.service
+             ├─ 376 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+             └─1231 /usr/bin/docker-proxy -proto tcp -host-ip 172.20.78.70 -host-port 33893 -container-ip 172.18.0.2 -container-port 6443 -use-lis>
+
+Jan 10 05:18:15 LAPTOP-EUJRM4DD dockerd[376]: time="2026-01-10T05:18:15.292449553Z" level=error msg="[resolver] failed to query external DNS serve>
+Jan 10 05:18:16 LAPTOP-EUJRM4DD dockerd[376]: time="2026-01-10T05:18:16.794403999Z" level=error msg="[resolver] failed to query external DNS serve>
+Jan 10 05:18:18 LAPTOP-EUJRM4DD dockerd[376]: time="2026-01-10T05:18:18.295777193Z" level=error msg="[resolver] failed to query external DNS serve>
+Jan 10 05:18:19 LAPTOP-EUJRM4DD dockerd[376]: time="2026-01-10T05:18:19.796899472Z" level=error msg="[resolver] failed to query external DNS serve>
+Jan 10 05:18:21 LAPTOP-EUJRM4DD dockerd[376]: time="2026-01-10T05:18:21.297961385Z" level=error msg="[resolver] failed to query external DNS serve>
+Jan 10 05:18:22 LAPTOP-EUJRM4DD dockerd[376]: time="2026-01-10T05:18:22.800070703Z" level=error msg="[resolver] failed to query external DNS serve>
+Jan 10 05:18:24 LAPTOP-EUJRM4DD dockerd[376]: time="2026-01-10T05:18:24.301724453Z" level=error msg="[resolver] failed to query external DNS serve>
+Jan 10 05:18:25 LAPTOP-EUJRM4DD dockerd[376]: time="2026-01-10T05:18:25.803592073Z" level=error msg="[resolver] failed to query external DNS serve>
+Jan 10 05:18:27 LAPTOP-EUJRM4DD dockerd[376]: time="2026-01-10T05:18:27.304429046Z" level=error msg="[resolver] failed to query external DNS serve>
+Jan 10 05:18:28 LAPTOP-EUJRM4DD dockerd[376]: time="2026-01-10T05:18:28.806433541Z" level=error msg="[resolver] failed to query external DNS serve>
+lines 1-23/23 (END)
+rgirhepu@LAPTOP-EUJRM4DD:~$ systemctl status minikube
+Unit minikube.service could not be found.
+rgirhepu@LAPTOP-EUJRM4DD:~$ systemctl status ubuntu
+Unit ubuntu.service could not be found.
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$ ip route
+default via 172.20.64.1 dev eth0 proto kernel
+172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown
+172.18.0.0/16 dev br-00b89c9e849b proto kernel scope link src 172.18.0.1
+172.20.64.0/20 dev eth0 proto kernel scope link src 172.20.78.70
+192.168.49.0/24 dev br-19f6f63ce9f3 proto kernel scope link src 192.168.49.1 linkdown
+rgirhepu@LAPTOP-EUJRM4DD:~$ 172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown
+172.18.0.0/16 dev br-00b89c9e849b proto kernel scope link src 172.18.0.1
+172.20.64.0/20 dev eth0 proto kernel scope link src 172.20.78.70
+192.168.49.0/24^C
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$ ip route show default
+default via 172.20.64.1 dev eth0 proto kernel
+rgirhepu@LAPTOP-EUJRM4DD:~$ ping www.google.com
+PING www.google.com (142.251.220.4) 56(84) bytes of data.
+64 bytes from pnbomb-ay-in-f4.1e100.net (142.251.220.4): icmp_seq=1 ttl=117 time=41.3 ms
+64 bytes from pnbomb-ay-in-f4.1e100.net (142.251.220.4): icmp_seq=2 ttl=117 time=23.7 ms
+64 bytes from pnbomb-ay-in-f4.1e100.net (142.251.220.4): icmp_seq=3 ttl=117 time=34.6 ms
+64 bytes from pnbomb-ay-in-f4.1e100.net (142.251.220.4): icmp_seq=4 ttl=117 time=29.8 ms
+64 bytes from pnbomb-ay-in-f4.1e100.net (142.251.220.4): icmp_seq=5 ttl=117 time=35.7 ms
+64 bytes from pnbomb-ay-in-f4.1e100.net (142.251.220.4): icmp_seq=6 ttl=117 time=29.1 ms
+64 bytes from pnbomb-ay-in-f4.1e100.net (142.251.220.4): icmp_seq=7 ttl=117 time=26.4 ms
+64 bytes from pnbomb-ay-in-f4.1e100.net (142.251.220.4): icmp_seq=8 ttl=117 time=35.3 ms
+64 bytes from pnbomb-ay-in-f4.1e100.net (142.251.220.4): icmp_seq=9 ttl=117 time=32.6 ms
+64 bytes from pnbomb-ay-in-f4.1e100.net (142.251.220.4): icmp_seq=10 ttl=117 time=34.6 ms
+64 bytes from pnbomb-ay-in-f4.1e100.net (142.251.220.4): icmp_seq=11 ttl=117 time=32.0 ms
+64 bytes from pnbomb-ay-in-f4.1e100.net (142.251.220.4): icmp_seq=12 ttl=117 time=40.6 ms
+64 bytes from pnbomb-ay-in-f4.1e100.net (142.251.220.4): icmp_seq=13 ttl=117 time=36.6 ms
+64 bytes from pnbomb-ay-in-f4.1e100.net (142.251.220.4): icmp_seq=14 ttl=117 time=33.3 ms
+64 bytes from pnbomb-ay-in-f4.1e100.net (142.251.220.4): icmp_seq=15 ttl=117 time=38.5 ms
+64 bytes from pnbomb-ay-in-f4.1e100.net (142.251.220.4): icmp_seq=16 ttl=117 time=33.4 ms
+64 bytes from pnbomb-ay-in-f4.1e100.net (142.251.220.4): icmp_seq=17 ttl=117 time=40.6 ms
+64 bytes from pnbomb-ay-in-f4.1e100.net (142.251.220.4): icmp_seq=18 ttl=117 time=37.8 ms
+64 bytes from pnbomb-ay-in-f4.1e100.net (142.251.220.4): icmp_seq=19 ttl=117 time=28.1 ms
+^C
+--- www.google.com ping statistics ---
+19 packets transmitted, 19 received, 0% packet loss, time 18081ms
+rtt min/avg/max/mdev = 23.721/33.898/41.281/4.787 ms
+rgirhepu@LAPTOP-EUJRM4DD:~$ ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=117 time=38.4 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=117 time=27.2 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=117 time=30.0 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=117 time=27.3 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=117 time=22.7 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=117 time=28.4 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=117 time=33.6 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=117 time=33.2 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=117 time=44.8 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=117 time=45.6 ms
+64 bytes from 8.8.8.8: icmp_seq=11 ttl=117 time=25.0 ms
+64 bytes from 8.8.8.8: icmp_seq=12 ttl=117 time=32.4 ms
+64 bytes from 8.8.8.8: icmp_seq=13 ttl=117 time=34.8 ms
+64 bytes from 8.8.8.8: icmp_seq=14 ttl=117 time=38.4 ms
+64 bytes from 8.8.8.8: icmp_seq=15 ttl=117 time=29.0 ms
+64 bytes from 8.8.8.8: icmp_seq=16 ttl=117 time=26.1 ms
+64 bytes from 8.8.8.8: icmp_seq=17 ttl=117 time=35.4 ms
+64 bytes from 8.8.8.8: icmp_seq=18 ttl=117 time=29.6 ms
+
+
+
+64 bytes from 8.8.8.8: icmp_seq=19 ttl=117 time=26.1 ms
+^C
+--- 8.8.8.8 ping statistics ---
+19 packets transmitted, 19 received, 0% packet loss, time 18121ms
+rtt min/avg/max/mdev = 22.719/31.991/45.559/6.221 ms
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$ traceroute google.com
+Command 'traceroute' not found, but can be installed with:
+sudo apt install inetutils-traceroute  # version 2:2.4-3ubuntu1, or
+sudo apt install traceroute            # version 1:2.1.5-1
+rgirhepu@LAPTOP-EUJRM4DD:~$ sudo apt install inetutils-traceroute
+[sudo] password for rgirhepu:
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  inetutils-traceroute
+0 upgraded, 1 newly installed, 0 to remove and 103 not upgraded.
+Need to get 42.2 kB of archives.
+After this operation, 113 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble/universe amd64 inetutils-traceroute amd64 2:2.5-3ubuntu4 [42.2 kB]
+Fetched 42.2 kB in 1s (37.4 kB/s)
+Selecting previously unselected package inetutils-traceroute.
+(Reading database ... 41520 files and directories currently installed.)
+Preparing to unpack .../inetutils-traceroute_2%3a2.5-3ubuntu4_amd64.deb ...
+Unpacking inetutils-traceroute (2:2.5-3ubuntu4) ...
+Setting up inetutils-traceroute (2:2.5-3ubuntu4) ...
+update-alternatives: using /usr/bin/inetutils-traceroute to provide /usr/bin/traceroute (traceroute) in auto mode
+Processing triggers for man-db (2.12.0-4build2) ...
+rgirhepu@LAPTOP-EUJRM4DD:~$ sudo apt install traceroute
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  traceroute
+0 upgraded, 1 newly installed, 0 to remove and 103 not upgraded.
+Need to get 60.5 kB of archives.
+After this operation, 162 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu noble/universe amd64 traceroute amd64 1:2.1.5-1 [60.5 kB]
+Fetched 60.5 kB in 1s (66.6 kB/s)
+Selecting previously unselected package traceroute.
+(Reading database ... 41529 files and directories currently installed.)
+Preparing to unpack .../traceroute_1%3a2.1.5-1_amd64.deb ...
+Unpacking traceroute (1:2.1.5-1) ...
+Setting up traceroute (1:2.1.5-1) ...
+update-alternatives: using /usr/bin/traceroute6.db to provide /usr/bin/traceroute6 (traceroute6) in auto mode
+update-alternatives: using /usr/bin/lft.db to provide /usr/bin/lft (lft) in auto mode
+update-alternatives: using /usr/bin/traceproto.db to provide /usr/bin/traceproto (traceproto) in auto mode
+update-alternatives: using /usr/sbin/tcptraceroute.db to provide /usr/sbin/tcptraceroute (tcptraceroute) in auto mode
+Processing triggers for man-db (2.12.0-4build2) ...
+rgirhepu@LAPTOP-EUJRM4DD:~$ traceroute google.com
+traceroute to google.com (142.250.76.174), 64 hops max
+  1   172.20.64.1  16.021ms  0.823ms  0.871ms
+  2   192.168.1.1  21.495ms  3.985ms  3.959ms
+  3   10.240.9.252  19.801ms  21.756ms  45.846ms
+  4   *  *  *
+  5   125.22.216.121  30.737ms  20.141ms  35.382ms
+  6   182.79.224.124  26.035ms  30.073ms  23.725ms
+  7   *  *  *
+  8   *  *  *
+  9   108.170.231.78  19.418ms  24.134ms  30.311ms
+ 10   216.239.46.137  34.953ms  33.375ms  33.778ms
+ 11   142.250.76.174  23.659ms  29.909ms  29.305ms
+rgirhepu@LAPTOP-EUJRM4DD:~$
+rgirhepu@LAPTOP-EUJRM4DD:~$ ls
+RahulLinux  ScriptDemo.sh  fil1.txt  file1.txt  file2.txt  file3.txt  full-stack_chatApp  get_helm.sh  kind-config.yaml  log.txt  newfolder
+rgirhepu@LAPTOP-EUJRM4DD:~$ mkdir greps
+rgirhepu@LAPTOP-EUJRM4DD:~$ cd greps
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ ls
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ touch logsfile.txt
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ ps -ef
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 04:33 ?        00:00:04 /sbin/init
+root           2       1  0 04:33 ?        00:00:00 /init
+root           7       2  0 04:33 ?        00:00:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          80       1  0 04:33 ?        00:00:11 /usr/lib/systemd/systemd-journald
+root         131       1  0 04:33 ?        00:00:02 /usr/lib/systemd/systemd-udevd
+systemd+     139       1  0 04:33 ?        00:00:00 /usr/lib/systemd/systemd-resolved
+systemd+     140       1  0 04:33 ?        00:00:00 /usr/lib/systemd/systemd-timesyncd
+root         202       1  0 04:33 ?        00:00:00 /usr/sbin/cron -f -P
+message+     203       1  0 04:33 ?        00:00:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-onl
+root         250       1  0 04:33 ?        00:00:01 /usr/lib/systemd/systemd-logind
+root         257       1  0 04:33 ?        00:00:01 /usr/libexec/wsl-pro-service -vv
+syslog       282       1  0 04:33 ?        00:00:01 /usr/sbin/rsyslogd -n -iNONE
+root         295       1  0 04:33 hvc0     00:00:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200,38400,9600 vt220
+root         306       1  0 04:33 ?        00:00:12 /usr/bin/containerd
+root         314       1  0 04:33 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear - linux
+root         376       1  0 04:33 ?        00:00:33 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root         382       1  0 04:33 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         593       2  0 04:34 ?        00:00:00 /init
+root         594     593  0 04:34 ?        00:00:00 /init
+rgirhepu     597     594  0 04:34 pts/0    00:00:01 -bash
+root         599       2  0 04:34 pts/1    00:00:00 /bin/login -f
+rgirhepu     916       1  0 04:34 ?        00:00:00 /usr/lib/systemd/systemd --user
+rgirhepu     917     916  0 04:34 ?        00:00:00 (sd-pam)
+root         984       1  0 04:34 ?        00:00:02 /usr/bin/containerd-shim-runc-v2 -namespace moby -id cb76ee430f700e375a49cf31fe6e5ff95b18cbf1ea
+root         993       1  0 04:34 ?        00:00:02 /usr/bin/containerd-shim-runc-v2 -namespace moby -id 82988b5c0edd7a3e309c5a742d5b23537f7a65c1a8
+root         994       1  0 04:34 ?        00:00:04 /usr/bin/containerd-shim-runc-v2 -namespace moby -id c289fea924ef6c67eeda01d89806ef7e9dcf4ddde9
+rgirhepu    1058     599  0 04:34 pts/1    00:00:00 -bash
+root        1068     984  0 04:34 ?        00:00:01 /sbin/init
+root        1075     993  0 04:34 ?        00:00:03 /sbin/init
+root        1078     994  0 04:34 ?        00:00:03 /sbin/init
+root        1231     376  0 04:34 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip 172.20.78.70 -host-port 33893 -container-ip 172.18.0.
+root        1573    1075  0 04:34 ?        00:00:00 /lib/systemd/systemd-journald
+root        1581    1078  0 04:34 ?        00:00:01 /lib/systemd/systemd-journald
+root        1607    1075  1 04:34 ?        00:01:12 /usr/local/bin/containerd
+root        1612    1078  1 04:34 ?        00:01:06 /usr/local/bin/containerd
+root        1776    1068  0 04:34 ?        00:00:05 /lib/systemd/systemd-journald
+root        1793    1068  1 04:34 ?        00:00:48 /usr/local/bin/containerd
+root        1886    1075  3 04:34 ?        00:02:17 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/et
+root        1887    1078  3 04:34 ?        00:02:25 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/et
+root        1967    1068  6 04:34 ?        00:03:48 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/et
+root        2021    1068  0 04:34 ?        00:00:02 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 4f7c4f3042a427624f06f120bb715df8de
+root        2022    1068  0 04:34 ?        00:00:01 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 65357fb7fbac1b19f54da2220e12df64f5
+root        2076    1068  0 04:34 ?        00:00:01 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 91c11c1fe7fc32ec40e97b5526e865a863
+root        2093    1068  0 04:34 ?        00:00:01 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id a9c07d0fdde82e2188e64c5b6dc3d373cd
+65535       2106    2022  0 04:34 ?        00:00:00 /pause
+65535       2136    2021  0 04:34 ?        00:00:00 /pause
+65535       2143    2076  0 04:34 ?        00:00:00 /pause
+65535       2150    2093  0 04:34 ?        00:00:00 /pause
+root        2235    2076  5 04:34 ?        00:03:15 kube-controller-manager --allocate-node-cidrs=true --authentication-kubeconfig=/etc/kubernetes/
+root        2243    2093  2 04:34 ?        00:01:30 kube-scheduler --authentication-kubeconfig=/etc/kubernetes/scheduler.conf --authorization-kubec
+root        2249    2022 11 04:34 ?        00:07:08 kube-apiserver --advertise-address=172.18.0.2 --allow-privileged=true --authorization-mode=Node
+root        2261    2021  6 04:34 ?        00:04:04 etcd --advertise-client-urls=https://172.18.0.2:2379 --cert-file=/etc/kubernetes/pki/etcd/serve
+root        2553    1075  0 04:34 ?        00:00:05 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 4383cc58fe1b00adf7d08bc20640eeae9e
+root        2621    1075  0 04:34 ?        00:00:03 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id d60467d1d36ed36f41f6e3a8a17153cb2a
+root        2696    1078  0 04:34 ?        00:00:04 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 888442358f65038e6ab7c251c0b193e017
+root        2713    1078  0 04:34 ?        00:00:04 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 9361a5eeabee28b06b5a16099540fb3a37
+65535       2774    2621  0 04:34 ?        00:00:00 /pause
+65535       2813    2696  0 04:34 ?        00:00:00 /pause
+65535       2816    2553  0 04:34 ?        00:00:00 /pause
+65535       2941    2713  0 04:34 ?        00:00:00 /pause
+root        3013    1078  0 04:34 ?        00:00:04 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id d0e76215cee6ac17ba3fc0497d698226b7
+65535       3091    3013  0 04:34 ?        00:00:00 /pause
+root        3171    2553  0 04:34 ?        00:00:11 /usr/local/bin/kube-proxy --config=/var/lib/kube-proxy/config.conf --hostname-override=argocd-c
+root        3192    2713  0 04:34 ?        00:00:17 /usr/local/bin/kube-proxy --config=/var/lib/kube-proxy/config.conf --hostname-override=argocd-c
+root        3248    1078  0 04:34 ?        00:00:04 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id c6011aaab10b45f259814ad790c090881d
+root        3249    1075  0 04:34 ?        00:00:04 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 5d4ee21a0fbf7ae4f1ce4277d5b356901d
+root        3250    1075  0 04:34 ?        00:00:04 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 2a4090026b59efa3e134fa41d3b46872a7
+root        3286    1075  0 04:34 ?        00:00:03 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id b36b1de3467d8396bfa75e3bfd6f9fdca8
+root        3290    1078  0 04:34 ?        00:00:06 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 5879eb00748ea0a4a597b9c98ed3ea2bfc
+root        3296    1078  0 04:34 ?        00:00:03 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 850e907d0e3ebc869df366a178f4740023
+root        3336    1075  0 04:34 ?        00:00:03 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 1431bb50c87553665a11043fc28253e01e
+root        3349    1078  0 04:34 ?        00:00:03 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id c08b1b4ecfd60d16c85571ed42b5e54cfc
+root        3457    1075  0 04:34 ?        00:00:03 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 2f66a08b7054dd4e2644c5417072626eb2
+65535       3464    3250  0 04:34 ?        00:00:00 /pause
+65535       3501    3290  0 04:34 ?        00:00:00 /pause
+65535       3518    3249  0 04:34 ?        00:00:00 /pause
+65535       3552    3248  0 04:34 ?        00:00:00 /pause
+65535       3570    3349  0 04:34 ?        00:00:00 /pause
+65535       3571    3286  0 04:34 ?        00:00:00 /pause
+dnsmasq     3581    3336  0 04:34 ?        00:00:00 /pause
+dnsmasq     3587    3013  0 04:34 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-applicationset-controller --metrics-addr=:8080 --probe-a
+65535       3592    3296  0 04:34 ?        00:00:00 /pause
+65535       3635    3457  0 04:34 ?        00:00:00 /pause
+root        3647    2696  0 04:34 ?        00:00:12 /bin/kindnetd
+root        3658    2621  0 04:34 ?        00:00:14 /bin/kindnetd
+dnsmasq     3739    3290  0 04:34 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-application-controller --metrics-port=8082
+dnsmasq     3760    3587  0 04:34 ?        00:00:10 /usr/local/bin/argocd-applicationset-controller --metrics-addr=:8080 --probe-addr=:8081 --webho
+dnsmasq     3836    3349  0 04:34 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-notifications --metrics-port=9001 --namespace=argocd --a
+dnsmasq     3840    3739  0 04:34 ?        00:00:17 /usr/local/bin/argocd-application-controller --metrics-port=8082
+65532       3903    3248  0 04:34 ?        00:00:28 /coredns -conf /etc/coredns/Corefile
+65532       3958    3457  0 04:34 ?        00:00:29 /coredns -conf /etc/coredns/Corefile
+dnsmasq     3978    3336  0 04:34 ?        00:00:30 redis-server *:6379
+dnsmasq     4043    3836  0 04:34 ?        00:00:08 /usr/local/bin/argocd-notifications --metrics-port=9001 --namespace=argocd --argocd-repo-server
+1001        4270    3249  0 04:34 ?        00:00:14 /shared/argocd-dex rundex
+dnsmasq     4669    3286  0 04:35 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-server --port=8080 --metrics-port=8083
+dnsmasq     4686    4669  0 04:35 ?        00:00:27 /usr/local/bin/argocd-server --port=8080 --metrics-port=8083
+dnsmasq     4731    3296  0 04:35 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-repo-server --port=8081 --metrics-port=8084
+dnsmasq     4749    4731  0 04:35 ?        00:00:15 /usr/local/bin/argocd-repo-server --port=8081 --metrics-port=8084
+dnsmasq     4763    4731  0 04:35 ?        00:00:00 gpg-agent --homedir /app/config/gpg/keys --use-standard-socket --daemon
+root        4964    3250  0 04:35 ?        00:00:02 local-path-provisioner --debug start --helper-image docker.io/kindest/local-path-helper:v202412
+polkitd     6143       1  0 05:03 ?        00:00:00 /usr/lib/polkit-1/polkitd --no-debug
+rgirhepu    7333     597 99 05:37 pts/0    00:00:00 ps -ef
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ ps -ef | grep /pause
+root        1886    1075  3 04:34 ?        00:02:18 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/etc/kubernetes/kubelet.conf --config=/var/lib/kubelet/config.yaml --container-runtime-endpoint=unix:///run/containerd/containerd.sock --node-ip=172.18.0.4 --node-labels= --pod-infra-container-image=registry.k8s.io/pause:3.10 --provider-id=kind://docker/argocd-cluster/argocd-cluster-worker --runtime-cgroups=/system.slice/containerd.service
+root        1887    1078  3 04:34 ?        00:02:26 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/etc/kubernetes/kubelet.conf --config=/var/lib/kubelet/config.yaml --container-runtime-endpoint=unix:///run/containerd/containerd.sock --node-ip=172.18.0.3 --node-labels= --pod-infra-container-image=registry.k8s.io/pause:3.10 --provider-id=kind://docker/argocd-cluster/argocd-cluster-worker2 --runtime-cgroups=/system.slice/containerd.service
+root        1967    1068  6 04:34 ?        00:03:49 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/etc/kubernetes/kubelet.conf --config=/var/lib/kubelet/config.yaml --container-runtime-endpoint=unix:///run/containerd/containerd.sock --node-ip=172.18.0.2 --node-labels= --pod-infra-container-image=registry.k8s.io/pause:3.10 --provider-id=kind://docker/argocd-cluster/argocd-cluster-control-plane --runtime-cgroups=/system.slice/containerd.service
+65535       2106    2022  0 04:34 ?        00:00:00 /pause
+65535       2136    2021  0 04:34 ?        00:00:00 /pause
+65535       2143    2076  0 04:34 ?        00:00:00 /pause
+65535       2150    2093  0 04:34 ?        00:00:00 /pause
+65535       2774    2621  0 04:34 ?        00:00:00 /pause
+65535       2813    2696  0 04:34 ?        00:00:00 /pause
+65535       2816    2553  0 04:34 ?        00:00:00 /pause
+65535       2941    2713  0 04:34 ?        00:00:00 /pause
+65535       3091    3013  0 04:34 ?        00:00:00 /pause
+65535       3464    3250  0 04:34 ?        00:00:00 /pause
+65535       3501    3290  0 04:34 ?        00:00:00 /pause
+65535       3518    3249  0 04:34 ?        00:00:00 /pause
+65535       3552    3248  0 04:34 ?        00:00:00 /pause
+65535       3570    3349  0 04:34 ?        00:00:00 /pause
+65535       3571    3286  0 04:34 ?        00:00:00 /pause
+dnsmasq     3581    3336  0 04:34 ?        00:00:00 /pause
+65535       3592    3296  0 04:34 ?        00:00:00 /pause
+65535       3635    3457  0 04:34 ?        00:00:00 /pause
+rgirhepu    7347     597  0 05:37 pts/0    00:00:00 grep --color=auto /pause
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ ps -ef | grep /pause
+root        1886    1075  3 04:34 ?        00:02:20 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/etc/kubernetes/kubelet.conf --config=/var/lib/kubelet/config.yaml --container-runtime-endpoint=unix:///run/containerd/containerd.sock --node-ip=172.18.0.4 --node-labels= --pod-infra-container-image=registry.k8s.io/pause:3.10 --provider-id=kind://docker/argocd-cluster/argocd-cluster-worker --runtime-cgroups=/system.slice/containerd.service
+root        1887    1078  3 04:34 ?        00:02:28 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/etc/kubernetes/kubelet.conf --config=/var/lib/kubelet/config.yaml --container-runtime-endpoint=unix:///run/containerd/containerd.sock --node-ip=172.18.0.3 --node-labels= --pod-infra-container-image=registry.k8s.io/pause:3.10 --provider-id=kind://docker/argocd-cluster/argocd-cluster-worker2 --runtime-cgroups=/system.slice/containerd.service
+root        1967    1068  6 04:34 ?        00:03:53 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/etc/kubernetes/kubelet.conf --config=/var/lib/kubelet/config.yaml --container-runtime-endpoint=unix:///run/containerd/containerd.sock --node-ip=172.18.0.2 --node-labels= --pod-infra-container-image=registry.k8s.io/pause:3.10 --provider-id=kind://docker/argocd-cluster/argocd-cluster-control-plane --runtime-cgroups=/system.slice/containerd.service
+65535       2106    2022  0 04:34 ?        00:00:00 /pause
+65535       2136    2021  0 04:34 ?        00:00:00 /pause
+65535       2143    2076  0 04:34 ?        00:00:00 /pause
+65535       2150    2093  0 04:34 ?        00:00:00 /pause
+65535       2774    2621  0 04:34 ?        00:00:00 /pause
+65535       2813    2696  0 04:34 ?        00:00:00 /pause
+65535       2816    2553  0 04:34 ?        00:00:00 /pause
+65535       2941    2713  0 04:34 ?        00:00:00 /pause
+65535       3091    3013  0 04:34 ?        00:00:00 /pause
+65535       3464    3250  0 04:34 ?        00:00:00 /pause
+65535       3501    3290  0 04:34 ?        00:00:00 /pause
+65535       3518    3249  0 04:34 ?        00:00:00 /pause
+65535       3552    3248  0 04:34 ?        00:00:00 /pause
+65535       3570    3349  0 04:34 ?        00:00:00 /pause
+65535       3571    3286  0 04:34 ?        00:00:00 /pause
+dnsmasq     3581    3336  0 04:34 ?        00:00:00 /pause
+65535       3592    3296  0 04:34 ?        00:00:00 /pause
+65535       3635    3457  0 04:34 ?        00:00:00 /pause
+rgirhepu    7379     597  0 05:38 pts/0    00:00:00 grep --color=auto /pause
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ ps -ef | grep /bin/kindnetd
+root        3647    2696  0 04:34 ?        00:00:12 /bin/kindnetd
+root        3658    2621  0 04:34 ?        00:00:15 /bin/kindnetd
+rgirhepu    7386     597  0 05:39 pts/0    00:00:00 grep --color=auto /bin/kindnetd
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ ps -ef | grep root
+root           1       0  0 04:33 ?        00:00:04 /sbin/init
+root           2       1  0 04:33 ?        00:00:00 /init
+root           7       2  0 04:33 ?        00:00:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          80       1  0 04:33 ?        00:00:11 /usr/lib/systemd/systemd-journald
+root         131       1  0 04:33 ?        00:00:02 /usr/lib/systemd/systemd-udevd
+root         202       1  0 04:33 ?        00:00:00 /usr/sbin/cron -f -P
+root         250       1  0 04:33 ?        00:00:01 /usr/lib/systemd/systemd-logind
+root         257       1  0 04:33 ?        00:00:01 /usr/libexec/wsl-pro-service -vv
+root         295       1  0 04:33 hvc0     00:00:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200,38400,9600 vt220
+root         306       1  0 04:33 ?        00:00:12 /usr/bin/containerd
+root         314       1  0 04:33 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear - linux
+root         376       1  0 04:33 ?        00:00:33 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root         382       1  0 04:33 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         593       2  0 04:34 ?        00:00:00 /init
+root         594     593  0 04:34 ?        00:00:00 /init
+root         599       2  0 04:34 pts/1    00:00:00 /bin/login -f
+root         984       1  0 04:34 ?        00:00:02 /usr/bin/containerd-shim-runc-v2 -namespace moby -id cb76ee430f700e375a49cf31fe6e5ff95b18cbf1ea4785cdbdf56bb482210644 -address /run/containerd/containerd.sock
+root         993       1  0 04:34 ?        00:00:02 /usr/bin/containerd-shim-runc-v2 -namespace moby -id 82988b5c0edd7a3e309c5a742d5b23537f7a65c1a824357d782d17c139fd1dc6 -address /run/containerd/containerd.sock
+root         994       1  0 04:34 ?        00:00:04 /usr/bin/containerd-shim-runc-v2 -namespace moby -id c289fea924ef6c67eeda01d89806ef7e9dcf4ddde9eaed253e40f5d4544f3333 -address /run/containerd/containerd.sock
+root        1068     984  0 04:34 ?        00:00:01 /sbin/init
+root        1075     993  0 04:34 ?        00:00:03 /sbin/init
+root        1078     994  0 04:34 ?        00:00:03 /sbin/init
+root        1231     376  0 04:34 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip 172.20.78.70 -host-port 33893 -container-ip 172.18.0.2 -container-port 6443 -use-listen-fd
+root        1573    1075  0 04:34 ?        00:00:00 /lib/systemd/systemd-journald
+root        1581    1078  0 04:34 ?        00:00:01 /lib/systemd/systemd-journald
+root        1607    1075  1 04:34 ?        00:01:14 /usr/local/bin/containerd
+root        1612    1078  1 04:34 ?        00:01:08 /usr/local/bin/containerd
+root        1776    1068  0 04:34 ?        00:00:05 /lib/systemd/systemd-journald
+root        1793    1068  1 04:34 ?        00:00:49 /usr/local/bin/containerd
+root        1886    1075  3 04:34 ?        00:02:21 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/etc/kubernetes/kubelet.conf --config=/var/lib/kubelet/config.yaml --container-runtime-endpoint=unix:///run/containerd/containerd.sock --node-ip=172.18.0.4 --node-labels= --pod-infra-container-image=registry.k8s.io/pause:3.10 --provider-id=kind://docker/argocd-cluster/argocd-cluster-worker --runtime-cgroups=/system.slice/containerd.service
+root        1887    1078  3 04:34 ?        00:02:29 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/etc/kubernetes/kubelet.conf --config=/var/lib/kubelet/config.yaml --container-runtime-endpoint=unix:///run/containerd/containerd.sock --node-ip=172.18.0.3 --node-labels= --pod-infra-container-image=registry.k8s.io/pause:3.10 --provider-id=kind://docker/argocd-cluster/argocd-cluster-worker2 --runtime-cgroups=/system.slice/containerd.service
+root        1967    1068  6 04:34 ?        00:03:55 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/etc/kubernetes/kubelet.conf --config=/var/lib/kubelet/config.yaml --container-runtime-endpoint=unix:///run/containerd/containerd.sock --node-ip=172.18.0.2 --node-labels= --pod-infra-container-image=registry.k8s.io/pause:3.10 --provider-id=kind://docker/argocd-cluster/argocd-cluster-control-plane --runtime-cgroups=/system.slice/containerd.service
+root        2021    1068  0 04:34 ?        00:00:02 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 4f7c4f3042a427624f06f120bb715df8def25c38410b0b2dec48713707601832 -address /run/containerd/containerd.sock
+root        2022    1068  0 04:34 ?        00:00:01 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 65357fb7fbac1b19f54da2220e12df64f5f898228a677f77aa3366e92aafc421 -address /run/containerd/containerd.sock
+root        2076    1068  0 04:34 ?        00:00:01 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 91c11c1fe7fc32ec40e97b5526e865a8632166e643e8c2a651771cfdc0f96497 -address /run/containerd/containerd.sock
+root        2093    1068  0 04:34 ?        00:00:01 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id a9c07d0fdde82e2188e64c5b6dc3d373cde51a5eda304f6e7489a48446c44fdc -address /run/containerd/containerd.sock
+root        2235    2076  5 04:34 ?        00:03:21 kube-controller-manager --allocate-node-cidrs=true --authentication-kubeconfig=/etc/kubernetes/controller-manager.conf --authorization-kubeconfig=/etc/kubernetes/controller-manager.conf --bind-address=127.0.0.1 --client-ca-file=/etc/kubernetes/pki/ca.crt --cluster-cidr=10.244.0.0/16 --cluster-name=argocd-cluster --cluster-signing-cert-file=/etc/kubernetes/pki/ca.crt --cluster-signing-key-file=/etc/kubernetes/pki/ca.key --controllers=*,bootstrapsigner,tokencleaner --enable-hostpath-provisioner=true --kubeconfig=/etc/kubernetes/controller-manager.conf --leader-elect=true --requestheader-client-ca-file=/etc/kubernetes/pki/front-proxy-ca.crt --root-ca-file=/etc/kubernetes/pki/ca.crt --service-account-private-key-file=/etc/kubernetes/pki/sa.key --service-cluster-ip-range=10.96.0.0/16 --use-service-account-credentials=true
+root        2243    2093  2 04:34 ?        00:01:32 kube-scheduler --authentication-kubeconfig=/etc/kubernetes/scheduler.conf --authorization-kubeconfig=/etc/kubernetes/scheduler.conf --bind-address=127.0.0.1 --kubeconfig=/etc/kubernetes/scheduler.conf --leader-elect=true
+root        2249    2022 11 04:34 ?        00:07:19 kube-apiserver --advertise-address=172.18.0.2 --allow-privileged=true --authorization-mode=Node,RBAC --client-ca-file=/etc/kubernetes/pki/ca.crt --enable-admission-plugins=NodeRestriction --enable-bootstrap-token-auth=true --etcd-cafile=/etc/kubernetes/pki/etcd/ca.crt --etcd-certfile=/etc/kubernetes/pki/apiserver-etcd-client.crt --etcd-keyfile=/etc/kubernetes/pki/apiserver-etcd-client.key --etcd-servers=https://127.0.0.1:2379 --kubelet-client-certificate=/etc/kubernetes/pki/apiserver-kubelet-client.crt --kubelet-client-key=/etc/kubernetes/pki/apiserver-kubelet-client.key --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname --proxy-client-cert-file=/etc/kubernetes/pki/front-proxy-client.crt --proxy-client-key-file=/etc/kubernetes/pki/front-proxy-client.key --requestheader-allowed-names=front-proxy-client --requestheader-client-ca-file=/etc/kubernetes/pki/front-proxy-ca.crt --requestheader-extra-headers-prefix=X-Remote-Extra- --requestheader-group-headers=X-Remote-Group --requestheader-username-headers=X-Remote-User --runtime-config= --secure-port=6443 --service-account-issuer=https://kubernetes.default.svc.cluster.local --service-account-key-file=/etc/kubernetes/pki/sa.pub --service-account-signing-key-file=/etc/kubernetes/pki/sa.key --service-cluster-ip-range=10.96.0.0/16 --tls-cert-file=/etc/kubernetes/pki/apiserver.crt --tls-private-key-file=/etc/kubernetes/pki/apiserver.key
+root        2261    2021  6 04:34 ?        00:04:10 etcd --advertise-client-urls=https://172.18.0.2:2379 --cert-file=/etc/kubernetes/pki/etcd/server.crt --client-cert-auth=true --data-dir=/var/lib/etcd --experimental-initial-corrupt-check=true --experimental-watch-progress-notify-interval=5s --initial-advertise-peer-urls=https://172.18.0.2:2380 --initial-cluster=argocd-cluster-control-plane=https://172.18.0.2:2380 --key-file=/etc/kubernetes/pki/etcd/server.key --listen-client-urls=https://127.0.0.1:2379,https://172.18.0.2:2379 --listen-metrics-urls=http://127.0.0.1:2381 --listen-peer-urls=https://172.18.0.2:2380 --name=argocd-cluster-control-plane --peer-cert-file=/etc/kubernetes/pki/etcd/peer.crt --peer-client-cert-auth=true --peer-key-file=/etc/kubernetes/pki/etcd/peer.key --peer-trusted-ca-file=/etc/kubernetes/pki/etcd/ca.crt --snapshot-count=10000 --trusted-ca-file=/etc/kubernetes/pki/etcd/ca.crt
+root        2553    1075  0 04:34 ?        00:00:05 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 4383cc58fe1b00adf7d08bc20640eeae9e0f7814a7be670009bceb7bf35800d0 -address /run/containerd/containerd.sock
+root        2621    1075  0 04:34 ?        00:00:03 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id d60467d1d36ed36f41f6e3a8a17153cb2a261d77762ae4a77cb22669939a273c -address /run/containerd/containerd.sock
+root        2696    1078  0 04:34 ?        00:00:04 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 888442358f65038e6ab7c251c0b193e017d32b76fdc17b0662f16fc604985998 -address /run/containerd/containerd.sock
+root        2713    1078  0 04:34 ?        00:00:04 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 9361a5eeabee28b06b5a16099540fb3a37d70b8b9b61e6906a475a6257a60404 -address /run/containerd/containerd.sock
+root        3013    1078  0 04:34 ?        00:00:05 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id d0e76215cee6ac17ba3fc0497d698226b7ba79262e70173fa34327ec282763ca -address /run/containerd/containerd.sock
+root        3171    2553  0 04:34 ?        00:00:12 /usr/local/bin/kube-proxy --config=/var/lib/kube-proxy/config.conf --hostname-override=argocd-cluster-worker
+root        3192    2713  0 04:34 ?        00:00:17 /usr/local/bin/kube-proxy --config=/var/lib/kube-proxy/config.conf --hostname-override=argocd-cluster-worker2
+root        3248    1078  0 04:34 ?        00:00:04 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id c6011aaab10b45f259814ad790c090881dc0566a329722195f9979f3ef01e70a -address /run/containerd/containerd.sock
+root        3249    1075  0 04:34 ?        00:00:04 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 5d4ee21a0fbf7ae4f1ce4277d5b356901d179435b3042ebdb018d832be81341e -address /run/containerd/containerd.sock
+root        3250    1075  0 04:34 ?        00:00:04 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 2a4090026b59efa3e134fa41d3b46872a71bc35a01afc87ce3b9137c442472cb -address /run/containerd/containerd.sock
+root        3286    1075  0 04:34 ?        00:00:03 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id b36b1de3467d8396bfa75e3bfd6f9fdca85298c78895c255df7fb4603e3c288a -address /run/containerd/containerd.sock
+root        3290    1078  0 04:34 ?        00:00:06 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 5879eb00748ea0a4a597b9c98ed3ea2bfcc2187f66b4e539e7a5b4a481cb72f7 -address /run/containerd/containerd.sock
+root        3296    1078  0 04:34 ?        00:00:03 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 850e907d0e3ebc869df366a178f47400234dc5496b1641c1ecf1365479f771fb -address /run/containerd/containerd.sock
+root        3336    1075  0 04:34 ?        00:00:03 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 1431bb50c87553665a11043fc28253e01e8962918868b880e4d57ce5fe96196a -address /run/containerd/containerd.sock
+root        3349    1078  0 04:34 ?        00:00:04 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id c08b1b4ecfd60d16c85571ed42b5e54cfcfa708970a21c560a54d6e5d735743f -address /run/containerd/containerd.sock
+root        3457    1075  0 04:34 ?        00:00:03 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 2f66a08b7054dd4e2644c5417072626eb2dd39c0af1f9528c664a87cfda433dc -address /run/containerd/containerd.sock
+root        3647    2696  0 04:34 ?        00:00:12 /bin/kindnetd
+root        3658    2621  0 04:34 ?        00:00:15 /bin/kindnetd
+root        4964    3250  0 04:35 ?        00:00:02 local-path-provisioner --debug start --helper-image docker.io/kindest/local-path-helper:v20241212-8ac705d0 --config /etc/config/config.json
+rgirhepu    7394     597  0 05:39 pts/0    00:00:00 grep --color=auto root
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ ps -ef
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 04:33 ?        00:00:04 /sbin/init
+root           2       1  0 04:33 ?        00:00:00 /init
+root           7       2  0 04:33 ?        00:00:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --pipe-fd 10 --log-truncate
+root          80       1  0 04:33 ?        00:00:11 /usr/lib/systemd/systemd-journald
+root         131       1  0 04:33 ?        00:00:02 /usr/lib/systemd/systemd-udevd
+systemd+     139       1  0 04:33 ?        00:00:00 /usr/lib/systemd/systemd-resolved
+systemd+     140       1  0 04:33 ?        00:00:00 /usr/lib/systemd/systemd-timesyncd
+root         202       1  0 04:33 ?        00:00:00 /usr/sbin/cron -f -P
+message+     203       1  0 04:33 ?        00:00:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-onl
+root         250       1  0 04:33 ?        00:00:01 /usr/lib/systemd/systemd-logind
+root         257       1  0 04:33 ?        00:00:01 /usr/libexec/wsl-pro-service -vv
+syslog       282       1  0 04:33 ?        00:00:01 /usr/sbin/rsyslogd -n -iNONE
+root         295       1  0 04:33 hvc0     00:00:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200,38400,9600 vt220
+root         306       1  0 04:33 ?        00:00:12 /usr/bin/containerd
+root         314       1  0 04:33 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear - linux
+root         376       1  0 04:33 ?        00:00:33 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root         382       1  0 04:33 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         593       2  0 04:34 ?        00:00:00 /init
+root         594     593  0 04:34 ?        00:00:00 /init
+rgirhepu     597     594  0 04:34 pts/0    00:00:01 -bash
+root         599       2  0 04:34 pts/1    00:00:00 /bin/login -f
+rgirhepu     916       1  0 04:34 ?        00:00:00 /usr/lib/systemd/systemd --user
+rgirhepu     917     916  0 04:34 ?        00:00:00 (sd-pam)
+root         984       1  0 04:34 ?        00:00:02 /usr/bin/containerd-shim-runc-v2 -namespace moby -id cb76ee430f700e375a49cf31fe6e5ff95b18cbf1ea
+root         993       1  0 04:34 ?        00:00:02 /usr/bin/containerd-shim-runc-v2 -namespace moby -id 82988b5c0edd7a3e309c5a742d5b23537f7a65c1a8
+root         994       1  0 04:34 ?        00:00:04 /usr/bin/containerd-shim-runc-v2 -namespace moby -id c289fea924ef6c67eeda01d89806ef7e9dcf4ddde9
+rgirhepu    1058     599  0 04:34 pts/1    00:00:00 -bash
+root        1068     984  0 04:34 ?        00:00:01 /sbin/init
+root        1075     993  0 04:34 ?        00:00:03 /sbin/init
+root        1078     994  0 04:34 ?        00:00:03 /sbin/init
+root        1231     376  0 04:34 ?        00:00:00 /usr/bin/docker-proxy -proto tcp -host-ip 172.20.78.70 -host-port 33893 -container-ip 172.18.0.
+root        1573    1075  0 04:34 ?        00:00:00 /lib/systemd/systemd-journald
+root        1581    1078  0 04:34 ?        00:00:01 /lib/systemd/systemd-journald
+root        1607    1075  1 04:34 ?        00:01:14 /usr/local/bin/containerd
+root        1612    1078  1 04:34 ?        00:01:08 /usr/local/bin/containerd
+root        1776    1068  0 04:34 ?        00:00:05 /lib/systemd/systemd-journald
+root        1793    1068  1 04:34 ?        00:00:49 /usr/local/bin/containerd
+root        1886    1075  3 04:34 ?        00:02:22 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/et
+root        1887    1078  3 04:34 ?        00:02:30 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/et
+root        1967    1068  6 04:34 ?        00:03:56 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/et
+root        2021    1068  0 04:34 ?        00:00:02 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 4f7c4f3042a427624f06f120bb715df8de
+root        2022    1068  0 04:34 ?        00:00:01 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 65357fb7fbac1b19f54da2220e12df64f5
+root        2076    1068  0 04:34 ?        00:00:01 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 91c11c1fe7fc32ec40e97b5526e865a863
+root        2093    1068  0 04:34 ?        00:00:01 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id a9c07d0fdde82e2188e64c5b6dc3d373cd
+65535       2106    2022  0 04:34 ?        00:00:00 /pause
+65535       2136    2021  0 04:34 ?        00:00:00 /pause
+65535       2143    2076  0 04:34 ?        00:00:00 /pause
+65535       2150    2093  0 04:34 ?        00:00:00 /pause
+root        2235    2076  5 04:34 ?        00:03:22 kube-controller-manager --allocate-node-cidrs=true --authentication-kubeconfig=/etc/kubernetes/
+root        2243    2093  2 04:34 ?        00:01:33 kube-scheduler --authentication-kubeconfig=/etc/kubernetes/scheduler.conf --authorization-kubec
+root        2249    2022 11 04:34 ?        00:07:22 kube-apiserver --advertise-address=172.18.0.2 --allow-privileged=true --authorization-mode=Node
+root        2261    2021  6 04:34 ?        00:04:11 etcd --advertise-client-urls=https://172.18.0.2:2379 --cert-file=/etc/kubernetes/pki/etcd/serve
+root        2553    1075  0 04:34 ?        00:00:05 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 4383cc58fe1b00adf7d08bc20640eeae9e
+root        2621    1075  0 04:34 ?        00:00:03 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id d60467d1d36ed36f41f6e3a8a17153cb2a
+root        2696    1078  0 04:34 ?        00:00:04 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 888442358f65038e6ab7c251c0b193e017
+root        2713    1078  0 04:34 ?        00:00:04 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 9361a5eeabee28b06b5a16099540fb3a37
+65535       2774    2621  0 04:34 ?        00:00:00 /pause
+65535       2813    2696  0 04:34 ?        00:00:00 /pause
+65535       2816    2553  0 04:34 ?        00:00:00 /pause
+65535       2941    2713  0 04:34 ?        00:00:00 /pause
+root        3013    1078  0 04:34 ?        00:00:05 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id d0e76215cee6ac17ba3fc0497d698226b7
+65535       3091    3013  0 04:34 ?        00:00:00 /pause
+root        3171    2553  0 04:34 ?        00:00:12 /usr/local/bin/kube-proxy --config=/var/lib/kube-proxy/config.conf --hostname-override=argocd-c
+root        3192    2713  0 04:34 ?        00:00:17 /usr/local/bin/kube-proxy --config=/var/lib/kube-proxy/config.conf --hostname-override=argocd-c
+root        3248    1078  0 04:34 ?        00:00:04 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id c6011aaab10b45f259814ad790c090881d
+root        3249    1075  0 04:34 ?        00:00:04 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 5d4ee21a0fbf7ae4f1ce4277d5b356901d
+root        3250    1075  0 04:34 ?        00:00:04 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 2a4090026b59efa3e134fa41d3b46872a7
+root        3286    1075  0 04:34 ?        00:00:03 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id b36b1de3467d8396bfa75e3bfd6f9fdca8
+root        3290    1078  0 04:34 ?        00:00:06 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 5879eb00748ea0a4a597b9c98ed3ea2bfc
+root        3296    1078  0 04:34 ?        00:00:03 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 850e907d0e3ebc869df366a178f4740023
+root        3336    1075  0 04:34 ?        00:00:03 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 1431bb50c87553665a11043fc28253e01e
+root        3349    1078  0 04:34 ?        00:00:04 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id c08b1b4ecfd60d16c85571ed42b5e54cfc
+root        3457    1075  0 04:34 ?        00:00:03 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 2f66a08b7054dd4e2644c5417072626eb2
+65535       3464    3250  0 04:34 ?        00:00:00 /pause
+65535       3501    3290  0 04:34 ?        00:00:00 /pause
+65535       3518    3249  0 04:34 ?        00:00:00 /pause
+65535       3552    3248  0 04:34 ?        00:00:00 /pause
+65535       3570    3349  0 04:34 ?        00:00:00 /pause
+65535       3571    3286  0 04:34 ?        00:00:00 /pause
+dnsmasq     3581    3336  0 04:34 ?        00:00:00 /pause
+dnsmasq     3587    3013  0 04:34 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-applicationset-controller --metrics-addr=:8080 --probe-a
+65535       3592    3296  0 04:34 ?        00:00:00 /pause
+65535       3635    3457  0 04:34 ?        00:00:00 /pause
+root        3647    2696  0 04:34 ?        00:00:12 /bin/kindnetd
+root        3658    2621  0 04:34 ?        00:00:15 /bin/kindnetd
+dnsmasq     3739    3290  0 04:34 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-application-controller --metrics-port=8082
+dnsmasq     3760    3587  0 04:34 ?        00:00:10 /usr/local/bin/argocd-applicationset-controller --metrics-addr=:8080 --probe-addr=:8081 --webho
+dnsmasq     3836    3349  0 04:34 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-notifications --metrics-port=9001 --namespace=argocd --a
+dnsmasq     3840    3739  0 04:34 ?        00:00:17 /usr/local/bin/argocd-application-controller --metrics-port=8082
+65532       3903    3248  0 04:34 ?        00:00:28 /coredns -conf /etc/coredns/Corefile
+65532       3958    3457  0 04:34 ?        00:00:30 /coredns -conf /etc/coredns/Corefile
+dnsmasq     3978    3336  0 04:34 ?        00:00:31 redis-server *:6379
+dnsmasq     4043    3836  0 04:34 ?        00:00:08 /usr/local/bin/argocd-notifications --metrics-port=9001 --namespace=argocd --argocd-repo-server
+1001        4270    3249  0 04:34 ?        00:00:15 /shared/argocd-dex rundex
+dnsmasq     4669    3286  0 04:35 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-server --port=8080 --metrics-port=8083
+dnsmasq     4686    4669  0 04:35 ?        00:00:28 /usr/local/bin/argocd-server --port=8080 --metrics-port=8083
+dnsmasq     4731    3296  0 04:35 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-repo-server --port=8081 --metrics-port=8084
+dnsmasq     4749    4731  0 04:35 ?        00:00:15 /usr/local/bin/argocd-repo-server --port=8081 --metrics-port=8084
+dnsmasq     4763    4731  0 04:35 ?        00:00:00 gpg-agent --homedir /app/config/gpg/keys --use-standard-socket --daemon
+root        4964    3250  0 04:35 ?        00:00:02 local-path-provisioner --debug start --helper-image docker.io/kindest/local-path-helper:v202412
+polkitd     6143       1  0 05:03 ?        00:00:00 /usr/lib/polkit-1/polkitd --no-debug
+rgirhepu    7407     597 99 05:39 pts/0    00:00:00 ps -ef
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ vi rahul.txt
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ vi rahul.txt
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ cat rahul.txt | grep ps-ef
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ cat rahul.txt | grep /pause
+65535       3464    3250  0 04:34 ?        00:00:00 /pause
+65535       3501    3290  0 04:34 ?        00:00:00 /pause
+65535       3518    3249  0 04:34 ?        00:00:00 /pause
+65535       3552    3248  0 04:34 ?        00:00:00 /pause
+65535       3570    3349  0 04:34 ?        00:00:00 /pause
+65535       3571    3286  0 04:34 ?        00:00:00 /pause
+dnsmasq     3581    3336  0 04:34 ?        00:00:00 /pause
+65535       3592    3296  0 04:34 ?        00:00:00 /pause
+65535       3635    3457  0 04:34 ?        00:00:00 /pause
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ cat rahul.txt
+/bin/kindnetd
+root        3336    1075  0 04:34 ?        00:00:03 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 1431bb50c87553665a11043fc28253e01e
+root        3349    1078  0 04:34 ?        00:00:04 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id c08b1b4ecfd60d16c85571ed42b5e54cfc
+root        3457    1075  0 04:34 ?        00:00:03 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 2f66a08b7054dd4e2644c5417072626eb2
+65535       3464    3250  0 04:34 ?        00:00:00 /pause
+65535       3501    3290  0 04:34 ?        00:00:00 /pause
+65535       3518    3249  0 04:34 ?        00:00:00 /pause
+65535       3552    3248  0 04:34 ?        00:00:00 /pause
+65535       3570    3349  0 04:34 ?        00:00:00 /pause
+65535       3571    3286  0 04:34 ?        00:00:00 /pause
+dnsmasq     3581    3336  0 04:34 ?        00:00:00 /pause
+dnsmasq     3587    3013  0 04:34 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-applicationset-controller --metrics-addr=:8080 --probe-a
+65535       3592    3296  0 04:34 ?        00:00:00 /pause
+65535       3635    3457  0 04:34 ?        00:00:00 /pause
+root        3647    2696  0 04:34 ?        00:00:12 /bin/kindnetd
+root        3658    2621  0 04:34 ?        00:00:15 /bin/kindnetd
+dnsmasq     3739    3290  0 04:34 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-application-controller --metrics-port=8082
+dnsmasq     3760    3587  0 04:34 ?        00:00:10 /usr/local/bin/argocd-applicationset-controller --metrics-addr=:8080 --probe-addr=:8081 --webho
+dnsmasq     3836    3349  0 04:34 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-notifications --metrics-port=9001 --namespace=argocd --a
+dnsmasq     3840    3739  0 04:34 ?        00:00:17 /usr/local/bin/argocd-application-controller --metrics-port=8082
+65532       3903    3248  0 04:34 ?        00:00:28 /coredns -conf /etc/coredns/Corefile
+65532       3958    3457  0 04:34 ?        00:00:30 /coredns -conf /etc/coredns/Corefile
+dnsmasq     3978    3336  0 04:34 ?        00:00:31 redis-server *:6379
+dnsmasq     4043    3836  0 04:34 ?        00:00:08 /usr/local/bin/argocd-notifications --metrics-port=9001 --namespace=argocd --argocd-repo-server
+1001        4270    3249  0 04:34 ?        00:00:15 /shared/argocd-dex rundex
+dnsmasq     4669    3286  0 04:35 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-server --port=8080 --metrics-port=8083
+dnsmasq     4686    4669  0 04:35 ?        00:00:28 /usr/local/bin/argocd-server --port=8080 --metrics-port=8083
+dnsmasq     4731    3296  0 04:35 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-repo-server --port=8081 --metrics-port=8084
+dnsmasq     4749    4731  0 04:35 ?        00:00:15 /usr/local/bin/argocd-repo-server --port=8081 --metrics-port=8084
+dnsmasq     4763    4731  0 04:35 ?        00:00:00 gpg-agent --homedir /app/config/gpg/keys --use-standard-socket --daemon
+root        4964    3250  0 04:35 ?        00:00:02 local-path-provisioner --debug start --helper-image docker.io/kindest/local-path-helper:v202412
+polkitd     6143       1  0 05:03 ?        00:00:00 /usr/lib/polkit-1/polkitd --no-debug
+rgirhepu    7407     597 99 05:39 pts/0    00:00:00 ps -ef
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ cat rahul.txt | grep /usr/bin/tini
+dnsmasq     3587    3013  0 04:34 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-applicationset-controller --metrics-addr=:8080 --probe-a
+dnsmasq     3739    3290  0 04:34 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-application-controller --metrics-port=8082
+dnsmasq     3836    3349  0 04:34 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-notifications --metrics-port=9001 --namespace=argocd --a
+dnsmasq     4669    3286  0 04:35 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-server --port=8080 --metrics-port=8083
+dnsmasq     4731    3296  0 04:35 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-repo-server --port=8081 --metrics-port=8084
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ ls
+logsfile.txt  rahul.txt
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ awk '{print $1, &2}' rahul.txt
+awk: cmd. line:1: {print $1, &2}
+awk: cmd. line:1:            ^ syntax error
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ awk '{print $1 $2}' rahul.txt
+/bin/kindnetd
+root3336
+root3349
+root3457
+655353464
+655353501
+655353518
+655353552
+655353570
+655353571
+dnsmasq3581
+dnsmasq3587
+655353592
+655353635
+root3647
+root3658
+dnsmasq3739
+dnsmasq3760
+dnsmasq3836
+dnsmasq3840
+655323903
+655323958
+dnsmasq3978
+dnsmasq4043
+10014270
+dnsmasq4669
+dnsmasq4686
+dnsmasq4731
+dnsmasq4749
+dnsmasq4763
+root4964
+polkitd6143
+rgirhepu7407
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ awk '{print $1,$2}' rahul.txt
+/bin/kindnetd
+root 3336
+root 3349
+root 3457
+65535 3464
+65535 3501
+65535 3518
+65535 3552
+65535 3570
+65535 3571
+dnsmasq 3581
+dnsmasq 3587
+65535 3592
+65535 3635
+root 3647
+root 3658
+dnsmasq 3739
+dnsmasq 3760
+dnsmasq 3836
+dnsmasq 3840
+65532 3903
+65532 3958
+dnsmasq 3978
+dnsmasq 4043
+1001 4270
+dnsmasq 4669
+dnsmasq 4686
+dnsmasq 4731
+dnsmasq 4749
+dnsmasq 4763
+root 4964
+polkitd 6143
+rgirhepu 7407
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ awk '{print }' rahul.txt
+/bin/kindnetd
+root        3336    1075  0 04:34 ?        00:00:03 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 1431bb50c87553665a11043fc28253e01e
+root        3349    1078  0 04:34 ?        00:00:04 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id c08b1b4ecfd60d16c85571ed42b5e54cfc
+root        3457    1075  0 04:34 ?        00:00:03 /usr/local/bin/containerd-shim-runc-v2 -namespace k8s.io -id 2f66a08b7054dd4e2644c5417072626eb2
+65535       3464    3250  0 04:34 ?        00:00:00 /pause
+65535       3501    3290  0 04:34 ?        00:00:00 /pause
+65535       3518    3249  0 04:34 ?        00:00:00 /pause
+65535       3552    3248  0 04:34 ?        00:00:00 /pause
+65535       3570    3349  0 04:34 ?        00:00:00 /pause
+65535       3571    3286  0 04:34 ?        00:00:00 /pause
+dnsmasq     3581    3336  0 04:34 ?        00:00:00 /pause
+dnsmasq     3587    3013  0 04:34 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-applicationset-controller --metrics-addr=:8080 --probe-a
+65535       3592    3296  0 04:34 ?        00:00:00 /pause
+65535       3635    3457  0 04:34 ?        00:00:00 /pause
+root        3647    2696  0 04:34 ?        00:00:12 /bin/kindnetd
+root        3658    2621  0 04:34 ?        00:00:15 /bin/kindnetd
+dnsmasq     3739    3290  0 04:34 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-application-controller --metrics-port=8082
+dnsmasq     3760    3587  0 04:34 ?        00:00:10 /usr/local/bin/argocd-applicationset-controller --metrics-addr=:8080 --probe-addr=:8081 --webho
+dnsmasq     3836    3349  0 04:34 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-notifications --metrics-port=9001 --namespace=argocd --a
+dnsmasq     3840    3739  0 04:34 ?        00:00:17 /usr/local/bin/argocd-application-controller --metrics-port=8082
+65532       3903    3248  0 04:34 ?        00:00:28 /coredns -conf /etc/coredns/Corefile
+65532       3958    3457  0 04:34 ?        00:00:30 /coredns -conf /etc/coredns/Corefile
+dnsmasq     3978    3336  0 04:34 ?        00:00:31 redis-server *:6379
+dnsmasq     4043    3836  0 04:34 ?        00:00:08 /usr/local/bin/argocd-notifications --metrics-port=9001 --namespace=argocd --argocd-repo-server
+1001        4270    3249  0 04:34 ?        00:00:15 /shared/argocd-dex rundex
+dnsmasq     4669    3286  0 04:35 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-server --port=8080 --metrics-port=8083
+dnsmasq     4686    4669  0 04:35 ?        00:00:28 /usr/local/bin/argocd-server --port=8080 --metrics-port=8083
+dnsmasq     4731    3296  0 04:35 ?        00:00:00 /usr/bin/tini -- /usr/local/bin/argocd-repo-server --port=8081 --metrics-port=8084
+dnsmasq     4749    4731  0 04:35 ?        00:00:15 /usr/local/bin/argocd-repo-server --port=8081 --metrics-port=8084
+dnsmasq     4763    4731  0 04:35 ?        00:00:00 gpg-agent --homedir /app/config/gpg/keys --use-standard-socket --daemon
+root        4964    3250  0 04:35 ?        00:00:02 local-path-provisioner --debug start --helper-image docker.io/kindest/local-path-helper:v202412
+polkitd     6143       1  0 05:03 ?        00:00:00 /usr/lib/polkit-1/polkitd --no-debug
+rgirhepu    7407     597 99 05:39 pts/0    00:00:00 ps -ef
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ awk '{ print $2 $5 }' rahul.txt
+
+333604:34
+334904:34
+345704:34
+346404:34
+350104:34
+351804:34
+355204:34
+357004:34
+357104:34
+358104:34
+358704:34
+359204:34
+363504:34
+364704:34
+365804:34
+373904:34
+376004:34
+383604:34
+384004:34
+390304:34
+395804:34
+397804:34
+404304:34
+427004:34
+466904:35
+468604:35
+473104:35
+474904:35
+476304:35
+496404:35
+614305:03
+740705:39
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ awk '{ print $2  $5 }' rahul.txt
+
+333604:34
+334904:34
+345704:34
+346404:34
+350104:34
+351804:34
+355204:34
+357004:34
+357104:34
+358104:34
+358704:34
+359204:34
+363504:34
+364704:34
+365804:34
+373904:34
+376004:34
+383604:34
+384004:34
+390304:34
+395804:34
+397804:34
+404304:34
+427004:34
+466904:35
+468604:35
+473104:35
+474904:35
+476304:35
+496404:35
+614305:03
+740705:39
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ awk '{ print $2, $5 }' rahul.txt
+
+3336 04:34
+3349 04:34
+3457 04:34
+3464 04:34
+3501 04:34
+3518 04:34
+3552 04:34
+3570 04:34
+3571 04:34
+3581 04:34
+3587 04:34
+3592 04:34
+3635 04:34
+3647 04:34
+3658 04:34
+3739 04:34
+3760 04:34
+3836 04:34
+3840 04:34
+3903 04:34
+3958 04:34
+3978 04:34
+4043 04:34
+4270 04:34
+4669 04:35
+4686 04:35
+4731 04:35
+4749 04:35
+4763 04:35
+4964 04:35
+6143 05:03
+7407 05:39
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ awk '{ print $2, $5 }' rahul.txt
+
+3336 04:34
+3349 04:34
+3457 04:34
+3464 04:34
+3501 04:34
+3518 04:34
+3552 04:34
+3570 04:34
+3571 04:34
+3581 04:34
+3587 04:34
+3592 04:34
+3635 04:34
+3647 04:34
+3658 04:34
+3739 04:34
+3760 04:34
+3836 04:34
+3840 04:34
+3903 04:34
+3958 04:34
+3978 04:34
+4043 04:34
+4270 04:34
+4669 04:35
+4686 04:35
+4731 04:35
+4749 04:35
+4763 04:35
+4964 04:35
+6143 05:03
+7407 05:39
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ vi file1.sh
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ ls -ltr
+total 8
+-rw-r--r-- 1 rgirhepu rgirhepu    0 Jan 10 05:36 logsfile.txt
+-rw-r--r-- 1 rgirhepu rgirhepu 3208 Jan 10 05:40 rahul.txt
+-rw-r--r-- 1 rgirhepu rgirhepu  474 Jan 10 05:55 file1.sh
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ chmod 777 file1.sh
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ ls -ltr
+total 8
+-rw-r--r-- 1 rgirhepu rgirhepu    0 Jan 10 05:36 logsfile.txt
+-rw-r--r-- 1 rgirhepu rgirhepu 3208 Jan 10 05:40 rahul.txt
+-rwxrwxrwx 1 rgirhepu rgirhepu  474 Jan 10 05:55 file1.sh
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ ./file1.sh
+✅ Disk usage is normal (0%) on /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+✅ Disk usage is normal (1%) on /mnt/wsl
+✅ Disk usage is normal (79%) on /usr/lib/wsl/drivers
+✅ Disk usage is normal (2%) on /
+✅ Disk usage is normal (1%) on /mnt/wslg
+✅ Disk usage is normal (0%) on /usr/lib/wsl/lib
+✅ Disk usage is normal (1%) on /init
+✅ Disk usage is normal (1%) on /run
+✅ Disk usage is normal (0%) on /run/lock
+✅ Disk usage is normal (0%) on /run/shm
+✅ Disk usage is normal (1%) on /mnt/wslg/versions.txt
+✅ Disk usage is normal (1%) on /mnt/wslg/doc
+✅ Disk usage is normal (79%) on /mnt/c
+✅ Disk usage is normal (75%) on /mnt/d
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ vi file1.sh
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ df -hp
+df: invalid option -- 'p'
+Try 'df --help' for more information.
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ df -hP
+Filesystem      Size  Used Avail Use% Mounted on
+none            1.9G     0  1.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            1.9G  4.0K  1.9G   1% /mnt/wsl
+drivers         378G  297G   81G  79% /usr/lib/wsl/drivers
+/dev/sdd       1007G   13G  943G   2% /
+none            1.9G   76K  1.9G   1% /mnt/wslg
+none            1.9G     0  1.9G   0% /usr/lib/wsl/lib
+rootfs          1.9G  2.7M  1.9G   1% /init
+none            1.9G  792K  1.9G   1% /run
+none            1.9G     0  1.9G   0% /run/lock
+none            1.9G     0  1.9G   0% /run/shm
+none            1.9G   76K  1.9G   1% /mnt/wslg/versions.txt
+none            1.9G   76K  1.9G   1% /mnt/wslg/doc
+C:\             378G  297G   81G  79% /mnt/c
+D:\              98G   73G   25G  75% /mnt/d
+tmpfs           377M   20K  377M   1% /run/user/1000
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ df -hP | grep grep -vE 'tmpfs|devtmpfs'
+grep: tmpfs|devtmpfs: No such file or directory
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$ ./file1.sh
+✅ Disk usage is normal (0%) on /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+✅ Disk usage is normal (1%) on /mnt/wsl
+✅ Disk usage is normal (79%) on /usr/lib/wsl/drivers
+✅ Disk usage is normal (2%) on /
+✅ Disk usage is normal (1%) on /mnt/wslg
+✅ Disk usage is normal (0%) on /usr/lib/wsl/lib
+✅ Disk usage is normal (1%) on /init
+✅ Disk usage is normal (1%) on /run
+✅ Disk usage is normal (0%) on /run/lock
+✅ Disk usage is normal (0%) on /run/shm
+✅ Disk usage is normal (1%) on /mnt/wslg/versions.txt
+✅ Disk usage is normal (1%) on /mnt/wslg/doc
+✅ Disk usage is normal (79%) on /mnt/c
+✅ Disk usage is normal (75%) on /mnt/d
+rgirhepu@LAPTOP-EUJRM4DD:~/greps$
