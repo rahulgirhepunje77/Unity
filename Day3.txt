@@ -6,7 +6,7 @@ total 32
 drwxr-xr-x 3 rgirhepu rgirhepu  4096 Jan  7 17:07 RahulLinux
 drwxr-xr-x 3 rgirhepu rgirhepu  4096 Jan  7 17:24 newfolder
 drwxr-xr-x 6 rgirhepu rgirhepu  4096 Jan  8 10:52 full-stack_chatApp
-rgirhepu@LAPTOP-EUJRM4DD:~$dvjdvjdvkwekdvkevk
+rgirhepu@LAPTOP-EUJRM4DD:~$
 rgirhepu@LAPTOP-EUJRM4DD:~$
 rgirhepu@LAPTOP-EUJRM4DD:~$
 rgirhepu@LAPTOP-EUJRM4DD:~$ ls
@@ -316,5 +316,4 @@ none            1.9G   76K  1.9G   1% /mnt/wslg/doc
 C:\             378G  288G   90G  77% /mnt/c
 D:\              98G   73G   25G  75% /mnt/d
 tmpfs           377M   20K  377M   1% /run/user/1000
-
 rgirhepu@LAPTOP-EUJRM4DD:~$
